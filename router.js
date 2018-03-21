@@ -3,8 +3,9 @@ import Router from 'vue-router'
 
 import index from '~/pages/index'
 import technicals from '~/pages/technicals'
-import technicalsHome from '~/pages/technicals/index'
 import technicalsId from '~/pages/technicals/_id'
+import events from '~/pages/events'
+import support from '~/pages/support'
 
 Vue.use(Router)
 
@@ -18,21 +19,18 @@ export function createRouter() {
       {
         path: '/technicals',
         component: technicals,
-        children: [{
-            path: '',
-            component: technicalshome
-          }
-        ]
       },
       {
-        path: '/technicals/:id',
-        component: technicals,
-        children: [
-          {
-            path: '',
-            component: technicalsId
-          }
-        ]
+        path: '/t/:id',
+        component: technicalsId,
+      },
+      {
+        path: '/events',
+        component: events,
+      },
+      {
+        path: '/support',
+        component: support,
       }
     ]
   })

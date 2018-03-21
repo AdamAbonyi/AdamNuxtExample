@@ -1,5 +1,8 @@
 <template>
-  <section class="container">
+<div>
+  Home Page
+</div>
+  <!-- <section class="container">
     <div>
       <app-logo/>
       <h1 class="title">
@@ -19,7 +22,7 @@
           class="button--grey">GitHub</a>
       </div>
     </div>
-  </section>
+  </section> -->
 </template>
 
 <script>
@@ -33,7 +36,7 @@ export default {
 </script>
 
 <style>
-.container {
+/* .container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -42,7 +45,6 @@ export default {
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
   font-size: 100px;
@@ -60,5 +62,5 @@ export default {
 
 .links {
   padding-top: 15px;
-}
+} */
 </style>
