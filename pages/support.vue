@@ -8,6 +8,8 @@
 
 <script>
 export default {
+
+  transition: 'blur',
   components: {
   }
 }

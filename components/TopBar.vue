@@ -1,8 +1,10 @@
 <template>
- <b-navbar type="dark" variant="primary" toggleable>
+ <b-navbar type="dark" variant="primary" toggleable toggle-breakpoint="lg">
+    <b-navbar-brand to="/">Liberty</b-navbar-brand>
     <b-navbar-toggle target="nav_dropdown_collapse"></b-navbar-toggle>
+
     <b-collapse is-nav id="nav_dropdown_collapse">
-      <b-navbar-nav>
+      <b-navbar-nav class="ml-auto">
         <b-nav-item to="/#home">Home</b-nav-item>
         <b-nav-item to="/#technicals">Technicals</b-nav-item>
         <b-nav-item to="/#gallery">Gallery</b-nav-item>
@@ -23,4 +25,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>

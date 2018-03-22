@@ -7,38 +7,57 @@
       Some Btn
     </b-button>
   </div>
+
+  <section id="#home">
+    Home Stuff
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+  </section>
+
+  <section id="#technicals">
+    Technicals
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+  </section>
+
+  <section id="#gallery">
+    Gallery
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+  </section>
+
+  <section id="#instructors">
+    Instructors
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+  </section>
+
+  <section id="#instructors">
+    Testimonials
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+  </section>
+
+  <section id="#contact">
+    Contact
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+  </section>
 </div>
-  <!-- <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        nuxtjjouda
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section> -->
+
 </template>
 
 <script>
 import AppLogo from "~/components/AppLogo.vue";
 
 export default {
-  transition: {
-    name: 'slide',
-    mode: 'out-in'
-  },
+  transition: 'blur',
   components: {
     AppLogo
   }
@@ -46,31 +65,4 @@ export default {
 </script>
 
 <style>
-/* .container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-} */
 </style>
