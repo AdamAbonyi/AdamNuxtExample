@@ -1,6 +1,12 @@
 <template>
 <div>
   Home Page
+
+  <div class="row">
+    <b-button variant="primary" size="sm">
+      Some Btn
+    </b-button>
+  </div>
 </div>
   <!-- <section class="container">
     <div>
@@ -26,13 +32,17 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import AppLogo from "~/components/AppLogo.vue";
 
 export default {
+  transition: {
+    name: 'slide',
+    mode: 'out-in'
+  },
   components: {
     AppLogo
   }
-}
+};
 </script>
 
 <style>

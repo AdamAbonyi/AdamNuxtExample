@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 import index from '~/pages/index'
 import technicals from '~/pages/technicals'
-import technicalsId from '~/pages/technicals/_id'
+import technicalsId from '~/pages/t/_id'
 import events from '~/pages/events'
 import support from '~/pages/support'
 

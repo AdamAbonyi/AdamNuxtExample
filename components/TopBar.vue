@@ -1,46 +1,26 @@
 <template>
-  <div class="top-bar">
-    <div class="title">
-      <nuxt-link to="/">Logo And Text</nuxt-link>
-
-    </div>
-    <div class="buttons">
-      <nuxt-link to="/">Home</nuxt-link>
-      <nuxt-link to="/#technicals">Technicals</nuxt-link>
-      <nuxt-link to="/#gallery">Gallery</nuxt-link>
-      <nuxt-link to="/#instructors">Instructors and training</nuxt-link>
-      <nuxt-link to="/#testimonials">Testimonials</nuxt-link>
-      <nuxt-link to="/events">Events</nuxt-link>
-      <nuxt-link to="/support">Support</nuxt-link>
-      <nuxt-link to="/#contact">Contact</nuxt-link>
-    </div>
-  </div>
+ <b-navbar type="dark" variant="primary" toggleable>
+    <b-navbar-toggle target="nav_dropdown_collapse"></b-navbar-toggle>
+    <b-collapse is-nav id="nav_dropdown_collapse">
+      <b-navbar-nav>
+        <b-nav-item to="/#home">Home</b-nav-item>
+        <b-nav-item to="/#technicals">Technicals</b-nav-item>
+        <b-nav-item to="/#gallery">Gallery</b-nav-item>
+        <b-nav-item to="/#instructors">Instructors and training</b-nav-item>
+        <b-nav-item to="/#testimonials">Testimonials</b-nav-item>
+        <b-nav-item to="/events">Events</b-nav-item>
+        <b-nav-item to="/support">Support</b-nav-item>
+        <b-nav-item to="/#contact">Contact</b-nav-item>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
 
 <script>
-  export default {
-    name: "TopBar"
-  }
+export default {
+  name: "TopBar"
+};
 </script>
 
 <style scoped>
-a {
-  padding:4px;
-  font-size: 12px;
-}
-.top-bar {
-  padding:8px;
-  width:100%;
-  display: flex;
-  background-color:red;
-}
-
-.title {
-  flex:auto;
-}
-
-.buttons {
-  text-align:right;
-  flex:auto;
-}
 </style>
