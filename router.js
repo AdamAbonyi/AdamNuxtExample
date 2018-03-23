@@ -7,7 +7,22 @@ import technicalsId from '~/pages/t/_id'
 import events from '~/pages/events'
 import support from '~/pages/support'
 
+import VueScrollTo from "vue-scrollto";
+
 Vue.use(Router)
+// Vue.use(VueScrollTo, {
+//   container: "body",
+//   duration: 1000,
+//   easing: "ease",
+//   offset: { x: 0, y: 50 },
+//   cancelable: true,
+//   onStart: false,
+//   onDone: false,
+//   onCancel: false,
+//   x: false,
+//   y: true
+// })
+
 
 export function createRouter() {
   return new Router({
@@ -32,6 +47,16 @@ export function createRouter() {
         path: '/support',
         component: support,
       }
-    ]
+    ],
+    scrollBehavior(to, from, savedPosition) {
+      if (to.hash) {
+        VueScrollTo.scrollTo(to.hash, 700, { offset: -56});
+        return { selector: to.hash };
+      } else if (savedPosition) {
+        return savedPosition;
+      } else {
+        return { x: 0, y: 0 };
+      }
+    },
   })
 }

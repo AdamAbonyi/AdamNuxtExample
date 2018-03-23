@@ -1,49 +1,49 @@
 <template>
-<div>
-  Home Page
+<div class="container">
+  <!-- Home Page
 
   <div class="row">
-    <b-button variant="primary" size="sm">
+    <b-button variant="primary" size="sm" href="#technicals">
       Some Btn
     </b-button>
-  </div>
+  </div> -->
 
-  <section id="#home">
+  <section id="home">
     Home Stuff
     <br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br />
   </section>
 
-  <section id="#technicals">
+  <section id="technicals">
     Technicals
     <br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br />
   </section>
 
-  <section id="#gallery">
+  <section id="gallery">
     Gallery
     <br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br />
   </section>
 
-  <section id="#instructors">
+  <section id="instructors">
     Instructors
     <br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br />
   </section>
 
-  <section id="#instructors">
+  <section id="testimonials">
     Testimonials
     <br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br />
   </section>
 
-  <section id="#contact">
+  <section id="contact">
     Contact
     <br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br />
@@ -57,7 +57,7 @@
 import AppLogo from "~/components/AppLogo.vue";
 
 export default {
-  transition: 'blur',
+  transition: "blur",
   components: {
     AppLogo
   }
@@ -65,4 +65,5 @@ export default {
 </script>
 
 <style>
+
 </style>
