@@ -1,6 +1,6 @@
 <template>
- <b-navbar class="animated-navbar" :class="{ 'navbarWh': !expand }" type="dark" sticky variant="dark" toggleable toggle-breakpoint="lg">
-    <b-navbar-brand to="/">Liberty {{expand}} {{text}}</b-navbar-brand>
+ <b-navbar class="animated-navbar" :class="{ 'navbarWh': !expand, 'transparent': !expand }" type="dark" sticky variant="dark" toggleable toggle-breakpoint="lg">
+    <b-navbar-brand to="/">Liberty</b-navbar-brand>
     <b-navbar-toggle target="nav_dropdown_collapse"></b-navbar-toggle>
 
     <b-collapse is-nav id="nav_dropdown_collapse">
@@ -32,35 +32,21 @@ export default {
       function() {
         this.expand = !this.expand;
       }.bind(this),
-      8000
+      3000
     );
   }
 };
 </script>
 
 <style scoped lang="scss">
-.navbarWh .navbar-toggle {
-  top: 6px;
-}
-
 .navbarWh {
-  background-color: White;
-  -webkit-box-shadow: 0px 5px 18px -4px rgba(0, 0, 0, 0.62);
-  -moz-box-shadow: 0px 5px 18px -4px rgba(0, 0, 0, 0.62);
-  box-shadow: 0px 5px 18px -4px rgba(0, 0, 0, 0.62);
   min-height: 120px;
 }
 
-.navbarWh .navbar-toggle .icon-bar {
-  background-color: #ef4c36;
-}
 @media (min-width: 320px) {
   .navbarWh {
     min-height: auto;
   }
-}
-.navbarWh .topMenu li a {
-  color: Black !important;
 }
 
 .navbarWh .navbar-brand {
@@ -71,13 +57,12 @@ export default {
   height: 43px;
 }
 
-* {
+.animated-navbar, .animated-navbar .navbar-brand {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  // min-height: 56px;
 }
-.higher-navbar {
-  min-height: auto;
+
+.transparent {
   background-color: transparent !important;
 }
 </style>
