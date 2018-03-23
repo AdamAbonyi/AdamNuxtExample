@@ -10,19 +10,6 @@ import support from '~/pages/support'
 import VueScrollTo from "vue-scrollto";
 
 Vue.use(Router)
-// Vue.use(VueScrollTo, {
-//   container: "body",
-//   duration: 1000,
-//   easing: "ease",
-//   offset: { x: 0, y: 50 },
-//   cancelable: true,
-//   onStart: false,
-//   onDone: false,
-//   onCancel: false,
-//   x: false,
-//   y: true
-// })
-
 
 export function createRouter() {
   return new Router({
