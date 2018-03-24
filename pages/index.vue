@@ -55,7 +55,7 @@
 
 <script>
 import AppLogo from "~/components/AppLogo.vue";
-import VueScrollTo from "vue-scrollto";
+import scrollTo from "~/scripts/scrollTo";
 
 export default {
   components: {
@@ -66,7 +66,7 @@ export default {
   },
   mounted() {
     if (!this.$route.hash) return;
-    VueScrollTo.scrollTo(this.$route.hash, { offset: -100, duration: 0 });
+    scrollTo(this.$route.hash, { offset: -100, duration: 0 });
   }
 };
 </script>
