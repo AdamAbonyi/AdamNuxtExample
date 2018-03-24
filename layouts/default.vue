@@ -32,9 +32,9 @@ export default {
     handleScroll: function(event) {
       if (!!window) {
         if (window.scrollY >= 60) {
-          this.setNavExpand(true);
+          if (!this.navExpand) this.setNavExpand(true);
         } else {
-          this.setNavExpand(false);
+          if (!!this.navExpand) this.setNavExpand(false);
         }
       }
     }
