@@ -1,5 +1,11 @@
 <template>
- <b-navbar class="animated-navbar" :class="{ 'navbarWh': !navExpand, 'transparent': !navExpand }" type="dark" fixed="top" variant="dark" toggleable toggle-breakpoint="lg">
+ <b-navbar class="animated-navbar"
+           :class="{ 'navbarWh': !navExpand, 'transparent': !navExpand }"
+           :type="computedType"
+           fixed="top"
+           :variant="computedType"
+           toggleable
+           toggle-breakpoint="lg">
     <b-navbar-brand to="/">Liberty</b-navbar-brand>
     <b-navbar-toggle target="nav_dropdown_collapse"></b-navbar-toggle>
 
@@ -24,7 +30,10 @@ import { mapState, mapMutations } from "vuex";
 export default {
   name: "TopBar",
   computed: {
-    ...mapState(["navExpand"])
+    ...mapState(["navExpand"]),
+    computedType() {
+      return this.navExpand?'dark':'light';
+    }
   },
   methods: {
     ...mapMutations(["toggleNavExpand"])
@@ -63,8 +72,8 @@ export default {
 
 .animated-navbar,
 .animated-navbar .navbar-brand {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .transparent {
