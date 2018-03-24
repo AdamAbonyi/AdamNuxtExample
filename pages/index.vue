@@ -55,11 +55,17 @@
 
 <script>
 import AppLogo from "~/components/AppLogo.vue";
+import VueScrollTo from "vue-scrollto";
 
 export default {
-  transition: "blur",
   components: {
     AppLogo
+  },
+  created() {
+
+  },
+  mounted() {
+    VueScrollTo.scrollTo(this.$route.hash, { offset: -100, duration: 0 });
   }
 };
 </script>

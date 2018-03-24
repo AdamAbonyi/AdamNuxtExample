@@ -1,5 +1,5 @@
 <template>
- <b-navbar class="animated-navbar" :class="{ 'navbarWh': !expand, 'transparent': !expand }" type="dark" sticky variant="dark" toggleable toggle-breakpoint="lg">
+ <b-navbar class="animated-navbar" :class="{ 'navbarWh': !navExpand, 'transparent': !navExpand }" type="dark" fixed="top" variant="dark" toggleable toggle-breakpoint="lg">
     <b-navbar-brand to="/">Liberty</b-navbar-brand>
     <b-navbar-toggle target="nav_dropdown_collapse"></b-navbar-toggle>
 
@@ -19,21 +19,25 @@
 </template>
 
 <script>
+import { mapState, mapMutations } from "vuex";
+
 export default {
   name: "TopBar",
-  data() {
-    return {
-      expand: false,
-      text: "Kurva"
-    };
+  computed: {
+    ...mapState(["navExpand"])
   },
-  created() {
-    setInterval(
-      function() {
-        this.expand = !this.expand;
-      }.bind(this),
-      3000
-    );
+  methods: {
+    ...mapMutations(["toggleNavExpand"])
+  },
+  mounted() {
+    // Bugfix with classes not updating after rehydration
+    var tne = this.toggleNavExpand;
+    setTimeout(function() {
+      tne();
+      setTimeout(function() {
+        tne();
+      });
+    });
   }
 };
 </script>
@@ -57,7 +61,8 @@ export default {
   height: 43px;
 }
 
-.animated-navbar, .animated-navbar .navbar-brand {
+.animated-navbar,
+.animated-navbar .navbar-brand {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }

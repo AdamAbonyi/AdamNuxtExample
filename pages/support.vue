@@ -8,11 +8,8 @@
 
 <script>
 export default {
-
-  transition: 'blur',
-  components: {
-  }
-}
+  components: {}
+};
 </script>
 
 <style>

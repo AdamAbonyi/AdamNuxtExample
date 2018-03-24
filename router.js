@@ -37,7 +37,8 @@ export function createRouter() {
     ],
     scrollBehavior(to, from, savedPosition) {
       if (to.hash) {
-        VueScrollTo.scrollTo(to.hash, 700, { offset: -56});
+        if (to.path !== from.path)  return;
+        VueScrollTo.scrollTo(to.hash, { offset: -100, duration: 0});
         return { selector: to.hash };
       } else if (savedPosition) {
         return savedPosition;
