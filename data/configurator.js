@@ -44,17 +44,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "Liberty Sidemount configuration is unique with it’s independence. It is the only one Sidemount rebreather with everything onboard. It makes it completely standalone. You can just grab it and go to dive. This also a reason why it is possible to use it as a secondary or bailout rebreather.",
-                    "secondaryText": "Sidemount configuration was originally developed for very tight environments such a caves and wrecks. But it’s characteristics and performance convinced a plenty of non-overhead divers to use Sidemount configuration because of lightness, freedom of movement and low cross section area. Whether it is used as a primary or secondary rebreather always is Very important it’s neutral buoyancy.",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": "Sidemount configuration was originally developed for very tight environments such a caves and wrecks. But it’s characteristics and performance convinced a plenty of non-overhead divers to use Sidemount configuration because of lightness, freedom of movement and low cross section area. Whether it is used as a primary or secondary rebreather always is Very important it’s neutral buoyancy."
                 }
             },
             {
@@ -68,17 +58,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "Back-mounted counterlungs are widely used because they are hidden behind your shoulders and keep your chest free for easy manipulation with all equipment. The specific 3D design moved slightly on the top of the shoulder which make the big difference in breathing comfort and make it closer to amazing breathing performance of front-mounted counterlungs.",
-                    "secondaryText": "Back-mounted counterlungs are combined with Divesoft patented manual addition valves placed directly by the mouthpiece and your chest is really free for that reason. The inner volume of a single counterlung is 3.5 liter. It provides comfortable breathing for all divers.",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": "Back-mounted counterlungs are combined with Divesoft patented manual addition valves placed directly by the mouthpiece and your chest is really free for that reason. The inner volume of a single counterlung is 3.5 liter. It provides comfortable breathing for all divers."
                 }
             },
             {
@@ -92,17 +72,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "The big advantage of front-mounted counterlungs is undoubtedly the lowest work of breathing. The physics is stern and the only way how to make breathing really comfortable is to place counterlungs to your chest as close as possible. In combination with Liberty’s unique design made with aim to inner aerodynamics the Liberty has one of the lowest work of breathing on the market.",
-                    "secondaryText": "Another advantage is that front-mounted counterlungs have all control elements very easy available. It is possible to connect offboard diluent and oxygen via MAVs with a standard inflator bayonet connection. It makes this configuration very useful in huge variety of difficult dives.",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": "Another advantage is that front-mounted counterlungs have all control elements very easy available. It is possible to connect offboard diluent and oxygen via MAVs with a standard inflator bayonet connection. It makes this configuration very useful in huge variety of difficult dives."
                 }
             },
             {
@@ -116,17 +86,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "Dive surface valve is designed with the minimalism in mind. It is the most compact and lightest mouthpiece. Our DSV is a part of Liberty’s inner aerodynamics and allows high flow with minimal restriction for maximum breathing comfort. The smart minimalistic design allows very easy service.",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -140,17 +100,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "Dive surface valve is designed with the minimalism in mind. It is the most compact and lightest mouthpiece. Our DSV is a part of Liberty’s inner aerodynamics and allows high flow with minimal restriction for maximum breathing comfort. The smart minimalistic design allows very easy service.",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -168,17 +118,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "Bailout valve has significant advantage of immediate switch from rebreather to open circuit bailout in an emergency situation. There is no need to remove the mouthpiece from yourmouth in such a dangerous situation as hypoxia, hyperoxia or hypercapnia. You need just one easy movement to save yourself.",
-                    "secondaryText": "Liberty BOV is really unique. It is a gamechanger on the market because of its functional design and features. Even if it combines standard mouthpiece with 2nd stage regulator it stays light and compact. It makes it neutrally buoyant which prevents jaw’s fatigue during long dives. It is design to be versatile. It is possible to connect Divesoft patented MAVs or implement built-in ADV. Modular design allows to connect standard mouthpiece or connectors for variety of full-face masks.",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": "Liberty BOV is really unique. It is a gamechanger on the market because of its functional design and features. Even if it combines standard mouthpiece with 2nd stage regulator it stays light and compact. It makes it neutrally buoyant which prevents jaw’s fatigue during long dives. It is design to be versatile. It is possible to connect Divesoft patented MAVs or implement built-in ADV. Modular design allows to connect standard mouthpiece or connectors for variety of full-face masks."
                 }
             },
             {
@@ -192,17 +132,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "Standard ADV use simple mechanical design. The valve is opened by touch of opposite side of the inhale counterlung. It makes it very easy for service. Standard ADV has an isolator whit possibility to change the direction of opening and closing.",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -216,17 +146,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "Membrane ADV adds the exact and precise amount of diluent to your breathing loop. It is designed on the principle of regulator 2nd stage and for that reason is the automatic diluent addition very natural and smooth. I spite of lightness of the addition it doesn’t overfeed you with a gas and doesn’t affect your buoyancy in unforeseen moments.",
-                    "secondaryText": "Liberty design is typical for it’s minimalism and simplicity. This membrane ADV is not an exception. Membrane ADV is built from 6 parts only! It makes it very ease to repair in case of fault.",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": "Liberty design is typical for it’s minimalism and simplicity. This membrane ADV is not an exception. Membrane ADV is built from 6 parts only! It makes it very ease to repair in case of fault."
                 }
             },
             {
@@ -240,17 +160,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "Membrane ADV placed in T-piece adds the exact and precise amount of diluent to your breathing loop. It is designed on the principle of regulator 2nd stage and for that reason is the automatic diluent addition very natural and smooth. I spite of lightness of the addition it doesn’t overfeed you with a gas and doesn’t affect your buoyancy in unforeseen moments.",
-                    "secondaryText": "Liberty design is typical for it’s minimalism and simplicity. This membrane ADV is not an exception. Membrane ADV is built from 6 parts only! It makes it very ease to repair in case of fault.",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": "Liberty design is typical for it’s minimalism and simplicity. This membrane ADV is not an exception. Membrane ADV is built from 6 parts only! It makes it very ease to repair in case of fault."
                 }
             },
             {
@@ -264,17 +174,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -288,17 +188,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -312,17 +202,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -336,17 +216,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -360,17 +230,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -384,17 +244,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -412,17 +262,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -436,17 +276,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -464,17 +294,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -488,17 +308,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -516,17 +326,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -544,17 +344,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -572,17 +362,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -595,17 +375,7 @@ const configurator =
                 "defaultFor": "all",
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -617,17 +387,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -640,17 +400,7 @@ const configurator =
                 "defaultFor": "all",
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -662,17 +412,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -685,17 +425,7 @@ const configurator =
                 "defaultFor": "all",
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -707,17 +437,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -737,17 +457,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -768,17 +478,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -795,17 +495,7 @@ const configurator =
                 "defaultFor": "usd",
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -818,17 +508,7 @@ const configurator =
                 "defaultFor": "all",
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -849,17 +529,7 @@ const configurator =
                 "defaultFor": "usd",
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -872,17 +542,7 @@ const configurator =
                 "defaultFor": "all",
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -903,17 +563,7 @@ const configurator =
                 "defaultFor": "usd",
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -926,17 +576,7 @@ const configurator =
                 "defaultFor": "all",
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -957,17 +597,7 @@ const configurator =
                 "defaultFor": "usd",
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -980,17 +610,7 @@ const configurator =
                 "defaultFor": "all",
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             },
             {
@@ -1635,17 +1255,7 @@ const configurator =
                 },
                 "detail": {
                     "mainText": "",
-                    "secondaryText": "",
-                    "gallery": [
-                        {
-                            "url": "",
-                            "alt": ""
-                        },
-                        {
-                            "url": "",
-                            "alt": ""
-                        }
-                    ]
+                    "secondaryText": ""
                 }
             }
         ],

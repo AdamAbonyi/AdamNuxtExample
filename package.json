@@ -4,13 +4,8 @@
   "description": "Nuxt.js project",
   "author": "Adam Abonyi <adam.abonyi@summitmedia.com>",
   "private": true,
-  "config": {
-    "nuxt": {
-      "port": "3333"
-    }
-  },
   "scripts": {
-    "dev": "nuxt",
+    "dev": "cross-env PORT=3333 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -19,10 +14,11 @@
   },
   "dependencies": {
     "@nuxtjs/router": "^1.0.1",
+    "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "bootstrap-vue": "^2.0.0-rc.2",
+    "cross-env": "^5.1.4",
     "nuxt": "^1.0.0",
-    "axios": "^0.18.0",
     "vue-scrollto": "^2.11.0"
   },
   "devDependencies": {

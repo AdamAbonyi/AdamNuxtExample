@@ -10,17 +10,15 @@
                     configurator.
                 </p>
                 <p>
-                    <a href="#" class="btn btn-primary my-2" onclick="resetConfigurator('usd');">Start the Configurator (USD)</a>&nbsp;
-                    <a href="#" class="btn btn-primary my-2" onclick="resetConfigurator('eur');">Start the Configurator (EUR)</a>&nbsp;
-                    <a href="#" class="btn btn-secondary my-2" onclick="reloadPage();">Reload the Page</a>
+                    <b-btn variant="primary" @click="resetConfigurator('usd');">Start the Configurator (USD)</b-btn>&nbsp;
+                    <b-btn variant="primary" @click="resetConfigurator('eur');">Start the Configurator (EUR)</b-btn>&nbsp;
+                    <b-btn class="my-2" @click="reloadPage();">Reload the Page</b-btn>
                 </p>
             </div>
         </section>
 
-        <div class="album py-5 bg-light" :class="{ 'display-none': !configurator.__started }">
-            <div id="tmplTarget" class="container">
-              <p>ahoj: {{customer.environment}} ... {{configuratorData.answers[0].subTitle}}</p>
-            </div>
+        <div class="album py-5 bg-light" :class="{ 'display-none': !configuratorStarted }">
+            <component :is="getComponentName" :data="getComponentData" />
         </div>
 
     </main>
@@ -28,15 +26,47 @@
 </template>
 
 <script>
-import { mapState, mapMutations } from "vuex";
+import { mapState, mapMutations, mapGetters } from "vuex";
+
+import Selection from "~/components/ConfiguratorSelection.vue";
+import MultiSelection from "~/components/ConfiguratorMultiSelection.vue";
+import AccList from "~/components/ConfiguratorAccessoryList.vue";
+import Summary from "~/components/ConfiguratorSummary.vue";
 
 export default {
-  components: {},
+  components: {
+    Selection,
+    MultiSelection,
+    AccList,
+    Summary
+  },
   computed: {
-    ...mapState(["customer", "configuratorData", "configurator"])
+    ...mapGetters(["configuratorStarted"]),
+
+    getComponentName() {
+      switch (this.$store.getters.configuratorState) {
+        case "single-sel": return "Selection";
+        case "multi-sel": return "MultiSelection";
+        case "acc-list": return "AccList";
+        case "summary": return "Summary";
+        default: return undefined;
+      }
+    },
+    getComponentData() {
+      switch (this.$store.getters.configuratorState) {
+        case "single-sel": return this.$store.state.configurator.curSelection;
+        case "multi-sel": return this.$store.state.configurator.multiSelection;
+        case "acc-list": return this.$store.state.configurator.accessoryList;
+        default: return undefined;
+      }
+    }
   },
   methods: {
-    ...mapMutations(["resetConfigurator"])
+    ...mapMutations(["resetConfigurator"]),
+
+    reloadPage() {
+      window.location.reload();
+    }
   }
 };
 </script>
