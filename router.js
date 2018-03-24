@@ -6,6 +6,7 @@ import technicals from '~/pages/technicals'
 import technicalsId from '~/pages/t/_id'
 import events from '~/pages/events'
 import support from '~/pages/support'
+import configurator from '~/pages/configurator'
 
 import VueScrollTo from "vue-scrollto";
 
@@ -14,7 +15,8 @@ Vue.use(Router)
 export function createRouter() {
   return new Router({
     mode: 'history',
-    routes: [{
+    routes: [
+      {
         path: '/',
         component: index
       },
@@ -33,12 +35,16 @@ export function createRouter() {
       {
         path: '/support',
         component: support,
+      },
+      {
+        path: '/configurator',
+        component: configurator,
       }
     ],
     scrollBehavior(to, from, savedPosition) {
       if (to.hash) {
-        if (to.path !== from.path)  return;
-        VueScrollTo.scrollTo(to.hash, { offset: -100, duration: 0});
+        if (to.path !== from.path) return;
+        VueScrollTo.scrollTo(to.hash, { offset: -100, duration: 0 });
         return { selector: to.hash };
       } else if (savedPosition) {
         return savedPosition;

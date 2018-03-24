@@ -15,13 +15,7 @@ export default {
   created() {
     if (process.browser) {
       window.addEventListener("scroll", this.handleScroll);
-    }
-    if (process.browser) {
-      if (this.$route.hash === "#home") {
-        this.setNavExpand(false);
-      } else {
-        this.setNavExpand(true);
-      }
+      this.handleScroll();
     }
   },
   computed: {
@@ -36,7 +30,7 @@ export default {
     ...mapMutations(["setNavExpand"]),
 
     handleScroll: function(event) {
-      if (window) {
+      if (!!window) {
         if (window.scrollY >= 60) {
           this.setNavExpand(true);
         } else {

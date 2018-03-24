@@ -65,6 +65,7 @@ export default {
 
   },
   mounted() {
+    if (!this.$route.hash) return;
     VueScrollTo.scrollTo(this.$route.hash, { offset: -100, duration: 0 });
   }
 };
