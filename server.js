@@ -1,5 +1,5 @@
-import express from 'express'
-import { Nuxt } from 'nuxt'
+const express = require('express')
+const Nuxt = require('nuxt').Nuxt
 
 const app = express()
 const host = process.env.HOST || '127.0.0.1'
