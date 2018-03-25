@@ -1,7 +1,21 @@
-const express = require('express')
+import express from 'express'
+import { Nuxt } from 'nuxt'
+
 const app = express()
-const port = process.env.PORT || 3000;
+const host = process.env.HOST || '127.0.0.1'
+const port = process.env.PORT || 3000
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.set('port', port)
 
-app.listen(port, () => console.log('Example app listening on port ' + port + '!'))
+// Import and Set Nuxt.js options
+const config = require('./nuxt.config.js')
+
+// Init Nuxt.js
+const nuxt = new Nuxt(config)
+
+// Give nuxt middleware to express
+app.use(nuxt.render)
+
+// Listen the server
+app.listen(port, host)
+console.log('Server listening on ' + host + ':' + port + '...')
