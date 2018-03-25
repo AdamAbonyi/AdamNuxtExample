@@ -81,6 +81,9 @@ const createStore = () => new Vuex.Store({
     setNavExpand(state, value) {
       state.navExpand = value;
     },
+    selectEnvironment(state, env) {
+      state.customer.environment = env;
+    },
     resetConfigurator(state, env) {
       state.customer.environment = env || (state.customer.environment || "usd");
       state.configurator.selStack = [];

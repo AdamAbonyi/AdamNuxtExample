@@ -10,15 +10,20 @@
                     configurator.
                 </p>
                 <p>
-                    <b-btn variant="primary" @click="resetConfigurator('usd');">Start the Configurator (USD)</b-btn>&nbsp;
-                    <b-btn variant="primary" @click="resetConfigurator('eur');">Start the Configurator (EUR)</b-btn>&nbsp;
+                    <b-btn variant="primary" @click="resetConfigurator();">Start the Configurator</b-btn>&nbsp;
                     <b-btn class="my-2" @click="reloadPage();">Reload the Page</b-btn>
                 </p>
             </div>
         </section>
 
         <div class="album py-5 bg-light" :class="{ 'display-none': !configuratorStarted }">
-            <component :is="getComponentName" :data="getComponentData" />
+          <div style="text-align: center">
+            <b-btn :variant="usdVariant" @click="selectEnvironment('usd');">USA (USD)</b-btn>&nbsp;
+            <b-btn :variant="eurVariant" @click="selectEnvironment('eur');">World (EUR)</b-btn>
+            <br />
+            <br />
+          </div>
+          <component :is="getComponentName" :data="getComponentData" />
         </div>
 
     </main>
@@ -43,6 +48,12 @@ export default {
   computed: {
     ...mapGetters(["configuratorStarted"]),
 
+    usdVariant() {
+      return ((this.$store.state.customer.environment === "usd") ? "secondary" : "primary");
+    },
+    eurVariant() {
+      return ((this.$store.state.customer.environment === "eur") ? "secondary" : "primary");
+    },
     getComponentName() {
       switch (this.$store.getters.configuratorState) {
         case "single-sel": return "Selection";
@@ -62,7 +73,7 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(["resetConfigurator"]),
+    ...mapMutations(["selectEnvironment", "resetConfigurator"]),
 
     reloadPage() {
       window.location.reload();
