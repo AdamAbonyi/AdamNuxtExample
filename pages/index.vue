@@ -8,6 +8,11 @@
     </b-button>
   </div> -->
 
+  <section id="links">
+    <nuxt-link to="/">Home</nuxt-link>&nbsp;
+    <nuxt-link to="/configurator">Configurator</nuxt-link>
+  </section>
+
   <section id="home">
     Home Stuff
     <br /><br /><br /><br /><br /><br />
@@ -55,15 +60,13 @@
 
 <script>
 import AppLogo from "~/components/AppLogo.vue";
-import scrollTo from "~/scripts/scrollTo";
+import scrollTo from "~/scripts/scroll-to";
 
 export default {
   components: {
     AppLogo
   },
-  created() {
-
-  },
+  created() {},
   mounted() {
     if (!this.$route.hash) return;
     scrollTo(this.$route.hash, { offset: -100, duration: 0 });

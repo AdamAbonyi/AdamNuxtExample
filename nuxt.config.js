@@ -1,4 +1,29 @@
 module.exports = {
+  router: {
+    linkActiveClass: "link-active",
+    scrollBehavior: function (to, from, savedPosition) {
+      if (!process.browser || !window || !window.customScrollTo) return;
+
+      if (to.hash) {
+        if (to.path !== from.path) return;
+        window.customScrollTo(to.hash, {
+          offset: -100,
+          duration: 500
+        });
+        return {
+          selector: to.hash
+        };
+      } else if (savedPosition) {
+        return savedPosition;
+      } else {
+        // Dont return to top when moving out
+        // return {
+        //   x: 0,
+        //   y: 0
+        // };
+      }
+    }
+  },
   /*
   ** Headers of the page
   */
@@ -26,8 +51,9 @@ module.exports = {
 
     // Or if you have custom bootstrap CSS...
     // ["bootstrap-vue/nuxt", { css: false }]
-    '@nuxtjs/router'
+    //'@nuxtjs/router'
   ],
+  plugins: ['~/plugins/custom-scroll-to'],
   /*
   ** Customize the progress bar color
   */

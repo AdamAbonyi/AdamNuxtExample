@@ -58,7 +58,7 @@ export default {
 }
 
 .high-margin {
-  margin-top: 86px;
+  margin-top: 78px;
 }
 .low-margin {
   margin-top: 86px;
