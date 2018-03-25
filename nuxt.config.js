@@ -39,6 +39,7 @@ module.exports = {
   css: [
     "@/assets/style.scss"
   ],
+  dev: ((process.env.NODE_ENV || "production").toLowerCase() !== 'production'),
   transition: {
     name: 'fade',
     mode: "out-in"
