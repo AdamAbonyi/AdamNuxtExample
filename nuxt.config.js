@@ -1,7 +1,7 @@
 module.exports = {
   router: {
     linkActiveClass: "link-active",
-    scrollBehavior: function (to, from, savedPosition) {
+    scrollBehavior: function(to, from, savedPosition) {
       if (!process.browser || !window || !window.customScrollTo) return;
 
       if (to.hash) {
@@ -11,7 +11,7 @@ module.exports = {
           duration: 500
         });
         return {
-          selector: to.hash
+          selector: savedPosition
         };
       } else if (savedPosition) {
         return savedPosition;
@@ -31,30 +31,31 @@ module.exports = {
     title: "nuxtjjouda",
     meta: [
       { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1, shrink-to-fit=no" },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1, shrink-to-fit=no"
+      },
       { hid: "description", name: "description", content: "Nuxt.js project" }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
-  css: [
-    "@/assets/style.scss"
-  ],
-  dev: ((process.env.NODE_ENV || "production").toLowerCase() !== 'production'),
+  css: ["@/assets/style.scss"],
+  dev: (process.env.NODE_ENV || "production").toLowerCase() !== "production",
   transition: {
-    name: 'fade',
+    name: "fade",
     mode: "out-in"
   },
   /*
   ** Modules
   */
   modules: [
-    "bootstrap-vue/nuxt",
+    "bootstrap-vue/nuxt"
 
     // Or if you have custom bootstrap CSS...
     // ["bootstrap-vue/nuxt", { css: false }]
     //'@nuxtjs/router'
   ],
-  plugins: ['~/plugins/custom-scroll-to'],
+  plugins: ["~/plugins/custom-scroll-to"],
   /*
   ** Customize the progress bar color
   */
@@ -64,14 +65,14 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['babel-polyfill'],
+    vendor: ["babel-polyfill"],
     /** Support for postcss */
     postcss: [
-      require('autoprefixer')(),
-      require('postcss-nested')(),
-      require('postcss-responsive-type')(),
-      require('postcss-hexrgba')(),
-      require('precss')(),
+      require("autoprefixer")(),
+      require("postcss-nested")(),
+      require("postcss-responsive-type")(),
+      require("postcss-hexrgba")(),
+      require("precss")()
     ],
     /*
     ** Run ESLint on save
@@ -88,4 +89,3 @@ module.exports = {
     }
   }
 };
-
