@@ -1,35 +1,57 @@
 <template>
-  <div class="container">
-    <div>
-      <Category v-for="category in data.categorizedQuestions" :key="category.categoryId" :data="category" />
+  <div class="col-sm-6 col-md-4 text-center">
+    <div><img alt="Michal Guba" src="https://ccrliberty.com/images/testimonials/michal-guba-thumb.png" class="imgCenter img-responsive"/></div>
+    <div class="columnTitle">
+      <strong>Michal Guba</strong>
+      <br />
+      Czech Republic
     </div>
-    <div style="text-align: center">
-      <b-btn @click="configuratorPopAnswerOrMultiselect()">One step back</b-btn>&nbsp;
-      <b-btn variant="primary" @click="configuratorSelectSummary()">Continue</b-btn>
+    <div class="columnText">
+      Liberty rebreathers are used for exploration and research of the Hranicka abyss for three years. We use eCCR Liberty for deep, exploration and securing dives. We are happy with the functionality and safety of the machine.
     </div>
+
   </div>
 </template>
 
 <script>
 import { mapState, mapMutations, mapGetters } from "vuex";
 
-import Category from "~/components/ConfiguratorAccessoryListCategory.vue";
-
 export default {
   props: {
     data: undefined
   },
-  components: {
-    Category
-  },
-  computed: {
-  },
-  methods: {
-    ...mapMutations(["configuratorPopAnswerOrMultiselect", "configuratorSelectSummary"])
-  }
+  components: {},
+  computed: {},
+  methods: {}
 };
 </script>
 
-<style>
+<style lang="scss">
+.imgCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.text-center {
+  text-align: center;
+}
+
+.columnTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: White;
+}
+
+@media only screen and (min-width: 992px) {
+  .columnText {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.columnText {
+  color: #878787;
+  line-height: 27px;
+}
 </style>

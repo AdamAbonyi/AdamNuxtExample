@@ -41,11 +41,13 @@
     <br /><br /><br /><br /><br /><br />
   </section>
 
-  <section id="testimonials">
-    Testimonials
-    <br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br />
+  <section id="testimonials" class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="row columns">
+      <Testimonial></Testimonial>
+      <Testimonial></Testimonial>
+      <Testimonial></Testimonial>
+    </div>
   </section>
 
   <section id="contact">
@@ -59,12 +61,12 @@
 </template>
 
 <script>
-import AppLogo from "~/components/AppLogo.vue";
+import Testimonial from "~/components/Testimonial";
 import scrollTo from "~/scripts/scroll-to";
 
 export default {
   components: {
-    AppLogo
+    Testimonial
   },
   created() {},
   mounted() {
@@ -74,6 +76,19 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
+.testimonials {
+  text-align: center;
+
+  h2 {
+    color: white;
+    line-height: 58px;
+    margin-bottom: 35px;
+  }
+}
 </style>
