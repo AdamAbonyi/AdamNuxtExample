@@ -67,13 +67,15 @@ module.exports = {
   build: {
     vendor: ["babel-polyfill"],
     /** Support for postcss */
-    postcss: [
-      require("autoprefixer")(),
-      require("postcss-nested")(),
-      require("postcss-responsive-type")(),
-      require("postcss-hexrgba")(),
-      require("precss")()
-    ],
+    postcss: {
+      plugins: {
+        "autoprefixer": true,
+        "postcss-nested": true,
+        "postcss-responsive-type": true,
+        "postcss-hexrgba": true,
+        "precss": true
+      }
+    },
     /*
     ** Run ESLint on save
     */
