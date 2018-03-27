@@ -14,8 +14,6 @@
 </template>
 
 <script>
-import { mapState, mapMutations, mapGetters } from "vuex";
-
 export default {
   props: {
     data: undefined
