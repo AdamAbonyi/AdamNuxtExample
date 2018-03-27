@@ -20,11 +20,18 @@
     <br /><br /><br /><br /><br /><br />
   </section>
 
-  <section id="technicals">
-    Technicals
-    <br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br />
+  <section id="technicals" class="technicals">
+    <h2>Technicals</h2>
+    <div class="row column">
+      <TechnicalBox number="01" title="Something something" link="/"></TechnicalBox>
+      <TechnicalBox number="02" title="Something something" link="/"></TechnicalBox>
+      <TechnicalBox number="03" title="Something something" link="/"></TechnicalBox>
+      <TechnicalBox number="04" title="Something something" link="/"></TechnicalBox>
+      <TechnicalBox number="05" title="Something something" link="/"></TechnicalBox>
+      <TechnicalBox number="06" title="Something something" link="/"></TechnicalBox>
+      <TechnicalBox number="07" title="Something something" link="/"></TechnicalBox>
+      <TechnicalBox number="08" title="Something something" link="/"></TechnicalBox>
+    </div>
   </section>
 
   <section id="gallery">
@@ -62,11 +69,14 @@
 
 <script>
 import Testimonial from "~/components/Testimonial";
+import TechnicalBox from "~/components/TechnicalBox";
+
 import scrollTo from "~/scripts/scroll-to";
 
 export default {
   components: {
-    Testimonial
+    Testimonial,
+    TechnicalBox
   },
   created() {},
   mounted() {
@@ -78,8 +88,17 @@ export default {
 
 <style lang="scss">
 section {
+  h2 {
+    line-height: 58px;
+    margin-bottom: 35px;
+  }
+
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.technicals > h2:first-child {
+  text-align: center;
 }
 
 .testimonials {
@@ -87,8 +106,6 @@ section {
 
   h2 {
     color: white;
-    line-height: 58px;
-    margin-bottom: 35px;
   }
 }
 </style>
