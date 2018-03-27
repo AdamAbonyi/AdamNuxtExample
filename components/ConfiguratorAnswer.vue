@@ -1,9 +1,9 @@
 <template>
   <div class="col-md-4">
     <b-modal v-if="!!answer.detail" v-model="modalShown" :title="answer.title" centered>
-      <h4 v-if="!!answer.subTitle" class="card-subtitle" style="margin-bottom: 15px">{{answer.subTitle}}</h4>
-      <p v-if="answer.detail.mainText" class="card-text">{{answer.detail.mainText}}</p>
-      <p v-if="answer.detail.secondaryText" class="card-text small">{{answer.detail.secondaryText}}</p>
+      <h4 v-if="!!answer.subTitle" :class="[{ 'card-subtitle': true }, answer.classes.subTitle]" style="margin-bottom: 15px">{{answer.subTitle}}</h4>
+      <p v-if="answer.detail.mainText" :class="[{ 'card-text': true }, answer.classes.detail.mainText]">{{answer.detail.mainText}}</p>
+      <p v-if="answer.detail.secondaryText" :class="[{ 'card-text': true, 'small': true }, answer.classes.detail.secondaryText]">{{answer.detail.secondaryText}}</p>
       <p class="card-text">Price: {{configuratorFormatPrice(answer.price)}}</p>
       <img v-for="img in answer.detail.gallery" :key="img.url" :src="img.url" :alt="img.alt" :title="img.alt" class="border" style="min-width: 50px; width: 50px; min-height: 50px; height: 50px; object-fit: contain;" />
       <div slot="modal-footer">
@@ -16,13 +16,15 @@
     </b-modal>
     <div class="card mb-4 box-shadow">
       <div class="card-body">
-        <h2 class="card-title">{{answer.title}}</h2>
-        <h3 v-if="answer.subTitle" class="card-subtitle">{{answer.subTitle}}</h3>
+        <h2 v-if="sel" :class="[{ 'card-title': true }, answer.classes.title]">{{answer.title}}</h2>
+        <h2 v-else :class="[{ 'card-title': true }, answer.classes.text]">{{answer.text}}</h2>
+
+        <h3 v-if="sel && answer.subTitle" :class="[{ 'card-subtitle': true }, answer.classes.subTitle]">{{answer.subTitle}}</h3>
       </div>
       <img v-if="!!answer.mainPicture" class="card-img-top" :src="answer.mainPicture.url" :alt="answer.mainPicture.alt" :title="answer.mainPicture.alt"
            style="height: 255px; object-fit: contain;" />
       <div class="card-body">
-        <p v-if="!!answer.text" class="card-text">{{answer.text}}</p>
+        <p v-if="sel && !!answer.text" :class="[{ 'card-text': true }, answer.classes.text]">{{answer.text}}</p>
         <p class="card-text">Price: {{configuratorFormatPrice(answer.price)}}</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
@@ -45,7 +47,8 @@ import { mapState, mapMutations, mapGetters } from "vuex";
 
 export default {
   props: {
-    data: undefined
+    data: undefined,
+    sel: true
   },
   data() {
     return {
@@ -100,5 +103,11 @@ export default {
 <style>
 .back-color-lightgreen {
   background-color: lightgreen;
+}
+.text-author-honza {
+  color: lightcoral;
+}
+.text-author-jakub {
+  color: lightskyblue;
 }
 </style>

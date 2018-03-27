@@ -38,10 +38,6 @@ const configurator =
                     "eur": 7500,
                     "usd": 8999
                 },
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
                     "mainText": "Liberty Sidemount configuration is unique with it’s independence. It is the only one Sidemount rebreather with everything onboard. It makes it completely standalone. You can just grab it and go to dive. This also a reason why it is possible to use it as a secondary or bailout rebreather.",
                     "secondaryText": "Sidemount configuration was originally developed for very tight environments such a caves and wrecks. But it’s characteristics and performance convinced a plenty of non-overhead divers to use Sidemount configuration because of lightness, freedom of movement and low cross section area. Whether it is used as a primary or secondary rebreather always is Very important it’s neutral buoyancy."
@@ -52,10 +48,6 @@ const configurator =
                 "title": "BMCL",
                 "subTitle": "Free chest, free movement, free mind",
                 "text": "Back mounted counterlungs keep your chest clear and offer you freedom in movements and diver has less chance to snag on something.",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
                     "mainText": "Back-mounted counterlungs are widely used because they are hidden behind your shoulders and keep your chest free for easy manipulation with all equipment. The specific 3D design moved slightly on the top of the shoulder which make the big difference in breathing comfort and make it closer to amazing breathing performance of front-mounted counterlungs.",
                     "secondaryText": "Back-mounted counterlungs are combined with Divesoft patented manual addition valves placed directly by the mouthpiece and your chest is really free for that reason. The inner volume of a single counterlung is 3.5 liter. It provides comfortable breathing for all divers."
@@ -66,10 +58,6 @@ const configurator =
                 "title": "FMCL",
                 "subTitle": "Amazing work of breating, maximum loop control",
                 "text": "Front mounted counterlungs offer the best work of breathing. You don't notice that you are breathing under water. More possibilities for off-board gases.",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
                     "mainText": "The big advantage of front-mounted counterlungs is undoubtedly the lowest work of breathing. The physics is stern and the only way how to make breathing really comfortable is to place counterlungs to your chest as close as possible. In combination with Liberty’s unique design made with aim to inner aerodynamics the Liberty has one of the lowest work of breathing on the market.",
                     "secondaryText": "Another advantage is that front-mounted counterlungs have all control elements very easy available. It is possible to connect offboard diluent and oxygen via MAVs with a standard inflator bayonet connection. It makes this configuration very useful in huge variety of difficult dives."
@@ -80,10 +68,6 @@ const configurator =
                 "title": "DSV",
                 "subTitle": "Light, compact, simple",
                 "text": "Dive Surface Valve is simple functional solution. It is for those who prefer the most compact, simple and lightest gear. The text variant for BMCL must also explain that ADV will be placed in T-piece and that there is no other option.",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
                     "mainText": "Dive surface valve is designed with the minimalism in mind. It is the most compact and lightest mouthpiece. Our DSV is a part of Liberty’s inner aerodynamics and allows high flow with minimal restriction for maximum breathing comfort. The smart minimalistic design allows very easy service.",
                     "secondaryText": ""
@@ -94,10 +78,6 @@ const configurator =
                 "title": "DSV",
                 "subTitle": "Light, compact, simple",
                 "text": "Dive Surface Valve is simple functional solution. It is for those who prefer the most compact, simple and lightest gear.",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
                     "mainText": "Dive surface valve is designed with the minimalism in mind. It is the most compact and lightest mouthpiece. Our DSV is a part of Liberty’s inner aerodynamics and allows high flow with minimal restriction for maximum breathing comfort. The smart minimalistic design allows very easy service.",
                     "secondaryText": ""
@@ -112,10 +92,6 @@ const configurator =
                     "eur": 949,
                     "usd": 903
                 },
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
                     "mainText": "Bailout valve has significant advantage of immediate switch from rebreather to open circuit bailout in an emergency situation. There is no need to remove the mouthpiece from yourmouth in such a dangerous situation as hypoxia, hyperoxia or hypercapnia. You need just one easy movement to save yourself.",
                     "secondaryText": "Liberty BOV is really unique. It is a gamechanger on the market because of its functional design and features. Even if it combines standard mouthpiece with 2nd stage regulator it stays light and compact. It makes it neutrally buoyant which prevents jaw’s fatigue during long dives. It is design to be versatile. It is possible to connect Divesoft patented MAVs or implement built-in ADV. Modular design allows to connect standard mouthpiece or connectors for variety of full-face masks."
@@ -126,10 +102,6 @@ const configurator =
                 "title": "ADV-Standard",
                 "subTitle": "Standard axial ADV",
                 "text": "Mechanical ADV with manual shut-off. Simple design allow to use it as a very quick diluent addition in emergency situation. Equipped with isolator.",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
                     "mainText": "Standard ADV use simple mechanical design. The valve is opened by touch of opposite side of the inhale counterlung. It makes it very easy for service. Standard ADV has an isolator whit possibility to change the direction of opening and closing.",
                     "secondaryText": ""
@@ -139,14 +111,10 @@ const configurator =
                 "id": "a_adv_membrane",
                 "title": "ADV-Membrane",
                 "subTitle": "Membrane ADV",
-                "text": "Ensures a precise and exact addition of diluent whenever you need. The addition is so smooth and precise that you feel very naturally during descends.",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
+                "text": "Membrane ADV ensures a precise and exact addition of diluent whenever you need it.",
                 "detail": {
-                    "mainText": "Membrane ADV adds the exact and precise amount of diluent to your breathing loop. It is designed on the principle of regulator 2nd stage and for that reason is the automatic diluent addition very natural and smooth. I spite of lightness of the addition it doesn’t overfeed you with a gas and doesn’t affect your buoyancy in unforeseen moments.",
-                    "secondaryText": "Liberty design is typical for it’s minimalism and simplicity. This membrane ADV is not an exception. Membrane ADV is built from 6 parts only! It makes it very ease to repair in case of fault."
+                    "mainText": "",
+                    "secondaryText": ""
                 }
             },
             {
@@ -154,10 +122,6 @@ const configurator =
                 "title": "ADV-T-piece",
                 "subTitle": "Membrane ADV in T-piece",
                 "text": "Ensures a precise and exact addition of diluent whenever you need. The addition is so smooth and precise that you feel very naturally during descends.",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
                     "mainText": "Membrane ADV placed in T-piece adds the exact and precise amount of diluent to your breathing loop. It is designed on the principle of regulator 2nd stage and for that reason is the automatic diluent addition very natural and smooth. I spite of lightness of the addition it doesn’t overfeed you with a gas and doesn’t affect your buoyancy in unforeseen moments.",
                     "secondaryText": "Liberty design is typical for it’s minimalism and simplicity. This membrane ADV is not an exception. Membrane ADV is built from 6 parts only! It makes it very ease to repair in case of fault."
@@ -168,10 +132,6 @@ const configurator =
                 "title": "ADV-BOV",
                 "subTitle": "ADV in BOV",
                 "text": "The most practical solution. Have your ADV in-built in your BOV for the best usability and comfort.",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
                     "mainText": "",
                     "secondaryText": ""
@@ -367,7 +327,7 @@ const configurator =
             },
             {
                 "id": "a_bmcl_harness_regular",
-                "title": "Regular",
+                "text": "Regular",
                 "mainPicture": {
                     "url": "",
                     "alt": ""
@@ -380,7 +340,7 @@ const configurator =
             },
             {
                 "id": "a_bmcl_harness_extended",
-                "title": "Extended",
+                "text": "Extended",
                 "mainPicture": {
                     "url": "",
                     "alt": ""
@@ -392,7 +352,7 @@ const configurator =
             },
             {
                 "id": "a_fmcl_harness_regular",
-                "title": "Regular",
+                "text": "Regular",
                 "mainPicture": {
                     "url": "",
                     "alt": ""
@@ -405,7 +365,7 @@ const configurator =
             },
             {
                 "id": "a_fmcl_harness_extended",
-                "title": "Extended",
+                "text": "Extended",
                 "mainPicture": {
                     "url": "",
                     "alt": ""
@@ -417,7 +377,7 @@ const configurator =
             },
             {
                 "id": "a_backmount_quick_release_yes_right",
-                "title": "YES, on the right shoulder strap",
+                "text": "YES, on the right shoulder strap",
                 "mainPicture": {
                     "url": "",
                     "alt": ""
@@ -430,7 +390,7 @@ const configurator =
             },
             {
                 "id": "a_backmount_quick_release_yes_left",
-                "title": "YES, on the left shoulder strap",
+                "text": "YES, on the left shoulder strap",
                 "mainPicture": {
                     "url": "",
                     "alt": ""
@@ -442,11 +402,11 @@ const configurator =
             },
             {
                 "id": "a_backmount_quick_release_no",
-                "title": "NO"
+                "text": "NO"
             },
             {
                 "id": "a_backmount_single_hose_adapter_yes",
-                "title": "YES",
+                "text": "YES",
                 "mainPicture": {
                     "url": "",
                     "alt": ""
@@ -462,12 +422,12 @@ const configurator =
             },
             {
                 "id": "a_backmount_single_hose_adapter_no",
-                "title": "NO",
+                "text": "NO",
                 "defaultFor": "all"
             },
             {
                 "id": "a_acc_gadget_set_yes",
-                "title": "YES",
+                "text": "YES",
                 "price": {
                     "eur": 431,
                     "usd": 405
@@ -483,11 +443,11 @@ const configurator =
             },
             {
                 "id": "a_acc_gadget_set_no",
-                "title": "NO"
+                "text": "NO"
             },
             {
                 "id": "a_sidemount_tanks_usa",
-                "title": "USA / CANADA",
+                "text": "USA / CANADA",
                 "mainPicture": {
                     "url": "",
                     "alt": ""
@@ -500,7 +460,7 @@ const configurator =
             },
             {
                 "id": "a_sidemount_tanks_world",
-                "title": "Rest of the world",
+                "text": "Rest of the world",
                 "mainPicture": {
                     "url": "",
                     "alt": ""
@@ -513,7 +473,7 @@ const configurator =
             },
             {
                 "id": "a_sidemount_tanks_none",
-                "title": "NONE",
+                "text": "NONE",
                 "price": {
                     "eur": -174,
                     "usd": -209
@@ -521,7 +481,7 @@ const configurator =
             },
             {
                 "id": "a_sidemount_valves_usa",
-                "title": "USA / CANADA",
+                "text": "USA / CANADA",
                 "mainPicture": {
                     "url": "",
                     "alt": ""
@@ -534,7 +494,7 @@ const configurator =
             },
             {
                 "id": "a_sidemount_valves_world",
-                "title": "Rest of the world",
+                "text": "Rest of the world",
                 "mainPicture": {
                     "url": "",
                     "alt": ""
@@ -547,7 +507,7 @@ const configurator =
             },
             {
                 "id": "a_sidemount_valves_none",
-                "title": "NONE",
+                "text": "NONE",
                 "price": {
                     "eur": -120,
                     "usd": -199
@@ -555,7 +515,7 @@ const configurator =
             },
             {
                 "id": "a_backmount_tanks_usa",
-                "title": "USA / CANADA",
+                "text": "USA / CANADA",
                 "mainPicture": {
                     "url": "",
                     "alt": ""
@@ -568,7 +528,7 @@ const configurator =
             },
             {
                 "id": "a_backmount_tanks_world",
-                "title": "Rest of the world",
+                "text": "Rest of the world",
                 "mainPicture": {
                     "url": "",
                     "alt": ""
@@ -581,7 +541,7 @@ const configurator =
             },
             {
                 "id": "a_backmount_tanks_none",
-                "title": "NONE",
+                "text": "NONE",
                 "price": {
                     "eur": -160,
                     "usd": -192
@@ -589,7 +549,7 @@ const configurator =
             },
             {
                 "id": "a_backmount_valves_usa",
-                "title": "USA / CANADA",
+                "text": "USA / CANADA",
                 "mainPicture": {
                     "url": "",
                     "alt": ""
@@ -602,7 +562,7 @@ const configurator =
             },
             {
                 "id": "a_backmount_valves_world",
-                "title": "Rest of the world",
+                "text": "Rest of the world",
                 "mainPicture": {
                     "url": "",
                     "alt": ""
@@ -615,7 +575,7 @@ const configurator =
             },
             {
                 "id": "a_backmount_valves_none",
-                "title": "NONE",
+                "text": "NONE",
                 "price": {
                     "eur": -150,
                     "usd": -199

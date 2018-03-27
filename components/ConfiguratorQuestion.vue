@@ -5,7 +5,7 @@
       <h4 class="card-subtitle">{{data.text}}</h4>
     </div>
     <div class="row">
-      <Answer v-for="answer in answers" :key="answer.answer.id" :data="answer" />
+      <Answer v-for="answer in answers" :key="answer.answer.id" :data="answer" :sel="false" />
     </div>
   </div>
 </template>

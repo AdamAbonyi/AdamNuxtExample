@@ -135,13 +135,36 @@ function initializeStructure(confData, arrName, hashName) {
     }
 }
 
-function initializeData(data) {
+function arrayToHash(arr) {
+    var hash = {};
+    for (var i = 0; i < arr.length; i++) {
+        hash[arr[i]] = true;
+    }
+    return hash;
+}
+
+function initializeData(data, { answerClasses }) {
     initializeStructure(data, "answers", "answerById");
     initializeStructure(data, "selections", "selectionById");
     initializeStructure(data, "questions", "questionById");
     initializeStructure(data, "multiSelections", "multiSelectionById");
     initializeStructure(data, "accessoryCategories", "accessoryCategoryById");
     initializeStructure(data, "accessoryLists", "accessoryListById");
+
+    for (var i = 0; i < data.answers.length; i++) {
+        var a = data.answers[i];
+        var c = answerClasses[a.id];
+
+        a.classes = {
+            title: arrayToHash(c.title || []),
+            subTitle: arrayToHash(c.subTitle || []),
+            text: arrayToHash(c.text || []),
+            detail: {
+                mainText: arrayToHash((c.detail || {}).mainText || []),
+                secondaryText: arrayToHash((c.detail || {}).secondaryText || [])
+            }
+        }
+    }
 
     return data;
 }

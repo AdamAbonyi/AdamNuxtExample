@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <Answer v-for="answer in answers" :key="answer.answer.id" :data="answer" />
+      <Answer v-for="answer in answers" :key="answer.answer.id" :data="answer" :sel="true" />
     </div>
     <div style="text-align: center">
       <b-btn :disabled="!configuratorBackStepAvailable" @click="configuratorPopAnswer()">One step back</b-btn>

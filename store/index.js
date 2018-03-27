@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import ConfiguratorData from '~/data/configurator'
+import ConfiguratorDataClasses from '~/data/configurator-classes'
 import ConfiguratorHelpers from './configurator-helpers'
 
 Vue.use(Vuex)
@@ -18,7 +19,7 @@ const createStore = () => new Vuex.Store({
     customer: {
       environment: null
     },
-    configuratorData: ConfiguratorHelpers.initializeData(ConfiguratorData),
+    configuratorData: ConfiguratorHelpers.initializeData(ConfiguratorData, ConfiguratorDataClasses),
     configurator: {
       completed: false,
       curSelection: null,
