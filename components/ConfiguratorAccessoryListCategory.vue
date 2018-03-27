@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { mapState, mapMutations, mapGetters } from "vuex";
+import { mapGetters } from "vuex";
 
 import Question from "~/components/ConfiguratorQuestion.vue";
 
@@ -21,19 +21,19 @@ export default {
     Question
   },
   computed: {
-    ...mapGetters(["configuratorBackStepAvailable"]),
+    ...mapGetters({
+      findAccessoryCategory: "configurator/findAccessoryCategory",
+      findQuestion: "configurator/findQuestion"
+    }),
 
     category() {
-      return this.$store.getters.configuratorFindAccessoryCategory(this.data.categoryId);
+      return this.findAccessoryCategory(this.data.categoryId);
     },
     questions() {
-      return this.data.questionIds.map(
-        q => this.$store.getters.configuratorFindQuestion(q) || {}
-      );
+      return this.data.questionIds.map(q => this.findQuestion(q) || {});
     }
   },
-  methods: {
-  }
+  methods: {}
 };
 </script>
 

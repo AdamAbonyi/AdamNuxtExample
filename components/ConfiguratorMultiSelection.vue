@@ -2,14 +2,14 @@
   <div class="container">
     <Question v-for="question in questions" :key="question.id" :data="question" />
     <div style="text-align: center">
-      <b-btn @click="configuratorPopAnswer()">One step back</b-btn>&nbsp;
+      <b-btn @click="popAnswer()">One step back</b-btn>&nbsp;
       <b-btn variant="primary" @click="selectAccessoryList()">Continue</b-btn>
     </div>
   </div>
 </template>
 
 <script>
-import { mapState, mapMutations, mapGetters } from "vuex";
+import { mapMutations, mapActions, mapGetters } from "vuex";
 
 import Question from "~/components/ConfiguratorQuestion.vue";
 
@@ -21,16 +21,21 @@ export default {
     Question
   },
   computed: {
-    ...mapGetters(["configuratorBackStepAvailable"]),
+    ...mapGetters({
+      findQuestion: "configurator/findQuestion"
+    }),
 
     questions() {
-      return this.data.questionIds.map(
-        q => this.$store.getters.configuratorFindQuestion(q) || {}
-      );
+      return this.data.questionIds.map(q => this.findQuestion(q) || {});
     }
   },
   methods: {
-    ...mapMutations(["configuratorPopAnswer", "configuratorSelectAccessoryList"]),
+    ...mapMutations({
+      popAnswer: "configurator/popAnswer"
+    }),
+    ...mapActions({
+      configuratorSelectAccessoryList: "configurator/selectAccessoryList"
+    }),
 
     selectAccessoryList() {
       this.configuratorSelectAccessoryList(this.data.accessoryListId);

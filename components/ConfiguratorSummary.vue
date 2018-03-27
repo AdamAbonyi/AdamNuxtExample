@@ -18,82 +18,103 @@
       </span>
       <br />
       <h4>TOTAL PRICE</h4>
-      {{configuratorFormatPrice(summary.totalPrice)}}
+      {{formatPrice(summary.totalPrice)}}
     </div>
     <div style="text-align: center">
-      <b-btn @click="configuratorPopAny();">One step back</b-btn>&nbsp;
-      <b-btn @click="resetConfigurator();">Start over</b-btn>
+      <b-btn @click="popAny();">One step back</b-btn>&nbsp;
+      <b-btn @click="reset();">Start over</b-btn>
     </div>
   </div>
 </template>
 
 <script>
-import { mapState, mapMutations, mapGetters } from "vuex";
+import { mapActions, mapMutations, mapGetters } from "vuex";
 
 export default {
   components: {},
   computed: {
-    ...mapGetters(["configuratorGetPrice", "configuratorFormatPrice", "configuratorFindQuestion", "configuratorFindAnswer"]),
+    ...mapGetters({
+      getPrice: "configurator/getPrice",
+      formatPrice: "configurator/formatPrice",
+      findQuestion: "configurator/findQuestion",
+      findAnswer: "configurator/findAnswer"
+    }),
 
     summary() {
-        var totalPrice = 0;
-        var data = {
-            mainLevels: [],
-            multiSelectLevel: [],
-            accessoryLevel: [],
-            totalPrice: {}
-        };
+      var totalPrice = 0;
+      var data = {
+        mainLevels: [],
+        multiSelectLevel: [],
+        accessoryLevel: [],
+        totalPrice: {}
+      };
 
-        var c = this.$store.state.configurator;
-        var env = this.$store.state.customer.environment;
-        var getPrice = this.configuratorGetPrice;
-        var formatPrice = this.configuratorFormatPrice;
-        var findQuestion = this.configuratorFindQuestion;
-        var findAnswer = this.configuratorFindAnswer;
+      var c = this.$store.state.configurator.state;
+      var env = this.$store.state.customer.environment;
+      var getPrice = this.getPrice;
+      var formatPrice = this.formatPrice;
+      var findQuestion = this.findQuestion;
+      var findAnswer = this.findAnswer;
 
-        for (var i = 0; i < c.selStack.length; i++) {
-            var price = getPrice(c.selStack[i].answer.price);
-            var priceText = (!!price ? (" (" + ((price > 0) ? "+" : "") + formatPrice(c.selStack[i].answer.price) + ")") : "");
+      for (var i = 0; i < c.selStack.length; i++) {
+        var price = getPrice(c.selStack[i].answer.price);
+        var priceText = !!price
+          ? " (" +
+            (price > 0 ? "+" : "") +
+            formatPrice(c.selStack[i].answer.price) +
+            ")"
+          : "";
 
-            data.mainLevels.push(c.selStack[i].answer.title.toUpperCase() + priceText);
-            totalPrice += price;
-        }
+        data.mainLevels.push(
+          c.selStack[i].answer.title.toUpperCase() + priceText
+        );
+        totalPrice += price;
+      }
 
-        for (var qId in c.multiSelectionChoices) {
-            if (!c.multiSelectionChoices.hasOwnProperty(qId)) continue;
+      for (var qId in c.multiSelectionChoices) {
+        if (!c.multiSelectionChoices.hasOwnProperty(qId)) continue;
 
-            var q = findQuestion(qId);
-            var ans = findAnswer(c.multiSelectionChoices[qId]);
-            var price = getPrice(ans.price);
-            var priceText = (!!price ? (" (" + ((price > 0) ? "+" : "") + formatPrice(ans.price) + ")") : "");
+        var q = findQuestion(qId);
+        var ans = findAnswer(c.multiSelectionChoices[qId]);
+        var price = getPrice(ans.price);
+        var priceText = !!price
+          ? " (" + (price > 0 ? "+" : "") + formatPrice(ans.price) + ")"
+          : "";
 
-            if (!q || !ans) continue;
+        if (!q || !ans) continue;
 
-            data.multiSelectLevel.push(q.title.toUpperCase() + ": " + ans.title.toUpperCase() + priceText);
-            totalPrice += price;
-        }
+        data.multiSelectLevel.push(
+          q.title.toUpperCase() + ": " + ans.text.toUpperCase() + priceText
+        );
+        totalPrice += price;
+      }
 
-        for (var qId in c.accessoryListChoices) {
-            if (!c.accessoryListChoices.hasOwnProperty(qId)) continue;
+      for (var qId in c.accessoryListChoices) {
+        if (!c.accessoryListChoices.hasOwnProperty(qId)) continue;
 
-            var q = findQuestion(qId);
-            var ans = findAnswer(c.accessoryListChoices[qId]);
-            var price = getPrice(ans.price);
-            var priceText = (!!price ? (" (" + ((price > 0) ? "+" : "") + formatPrice(ans.price) + ")") : "");
+        var q = findQuestion(qId);
+        var ans = findAnswer(c.accessoryListChoices[qId]);
+        var price = getPrice(ans.price);
+        var priceText = !!price
+          ? " (" + (price > 0 ? "+" : "") + formatPrice(ans.price) + ")"
+          : "";
 
-            if (!q || !ans || !price) continue;
+        if (!q || !ans || !price) continue;
 
-            data.accessoryLevel.push(q.title.toUpperCase() + ": " + ans.title.toUpperCase() + priceText);
-            totalPrice += price;
-        }
+        data.accessoryLevel.push(
+          q.title.toUpperCase() + ": " + ans.text.toUpperCase() + priceText
+        );
+        totalPrice += price;
+      }
 
-        data.totalPrice[env] = totalPrice;
-        
-        return data;
+      data.totalPrice[env] = totalPrice;
+
+      return data;
     }
   },
   methods: {
-    ...mapMutations(["resetConfigurator", "configuratorPopAny"]),
+    ...mapActions({ popAny: "configurator/popAny" }),
+    ...mapMutations({ reset: "configurator/reset" })
   }
 };
 </script>

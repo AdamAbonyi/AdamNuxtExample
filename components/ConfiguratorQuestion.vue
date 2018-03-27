@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { mapState, mapMutations, mapGetters } from "vuex";
+import { mapGetters } from "vuex";
 
 import Answer from "~/components/ConfiguratorAnswer.vue";
 
@@ -23,19 +23,20 @@ export default {
     Answer
   },
   computed: {
+    ...mapGetters({
+      findAnswer: "configurator/findAnswer"
+    }),
+
     answers() {
-      return this.data.answerIds.map(
-        a => {
-          return {
-            answer: this.$store.getters.configuratorFindAnswer(a) || {},
-            question: this.data
-          };
-        }
-      );
+      return this.data.answerIds.map(a => {
+        return {
+          answer: this.findAnswer(a) || {},
+          question: this.data
+        };
+      });
     }
   },
-  methods: {
-  }
+  methods: {}
 };
 </script>
 

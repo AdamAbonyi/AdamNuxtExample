@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import { mapState, mapMutations, mapGetters } from "vuex";
+import { mapMutations, mapGetters } from "vuex";
 
 import Selection from "~/components/ConfiguratorSelection.vue";
 import MultiSelection from "~/components/ConfiguratorMultiSelection.vue";
@@ -46,34 +46,54 @@ export default {
     Summary
   },
   computed: {
-    ...mapGetters(["configuratorStarted"]),
+    ...mapGetters({
+      configuratorStarted: "configurator/isStarted",
+      currentState: "configurator/currentState"
+    }),
 
     usdVariant() {
-      return ((this.$store.state.customer.environment === "usd") ? "secondary" : "primary");
+      return this.$store.state.customer.environment === "usd"
+        ? "secondary"
+        : "primary";
     },
     eurVariant() {
-      return ((this.$store.state.customer.environment === "eur") ? "secondary" : "primary");
+      return this.$store.state.customer.environment === "eur"
+        ? "secondary"
+        : "primary";
     },
     getComponentName() {
-      switch (this.$store.getters.configuratorState) {
-        case "single-sel": return "Selection";
-        case "multi-sel": return "MultiSelection";
-        case "acc-list": return "AccList";
-        case "summary": return "Summary";
-        default: return undefined;
+      switch (this.currentState) {
+        case "single-sel":
+          return "Selection";
+        case "multi-sel":
+          return "MultiSelection";
+        case "acc-list":
+          return "AccList";
+        case "summary":
+          return "Summary";
+        default:
+          return undefined;
       }
     },
     getComponentData() {
-      switch (this.$store.getters.configuratorState) {
-        case "single-sel": return this.$store.state.configurator.curSelection;
-        case "multi-sel": return this.$store.state.configurator.multiSelection;
-        case "acc-list": return this.$store.state.configurator.accessoryList;
-        default: return undefined;
+      var c = this.$store.state.configurator.state;
+      switch (this.currentState) {
+        case "single-sel":
+          return c.curSelection;
+        case "multi-sel":
+          return c.multiSelection;
+        case "acc-list":
+          return c.accessoryList;
+        default:
+          return undefined;
       }
     }
   },
   methods: {
-    ...mapMutations(["selectEnvironment", "resetConfigurator"]),
+    ...mapMutations({
+      selectEnvironment: "customer/selectEnvironment",
+      resetConfigurator: "configurator/reset"
+    }),
 
     reloadPage() {
       window.location.reload();
