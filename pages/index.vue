@@ -47,11 +47,9 @@
     </div>
   </section>
 
-  <section id="gallery">
-    Gallery
-    <br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br />
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <Gallery></Gallery>
   </section>
 
   <section id="instructors">
@@ -84,6 +82,7 @@
 import Testimonial from "~/components/Testimonial";
 import TechnicalBox from "~/components/TechnicalBox";
 import Rebreather from "~/components/Rebreather";
+import Gallery from "~/components/Gallery"
 
 import scrollTo from "~/scripts/scroll-to";
 
@@ -91,7 +90,8 @@ export default {
   components: {
     Testimonial,
     Rebreather,
-    TechnicalBox
+    TechnicalBox,
+    Gallery
   },
   created() {},
   mounted() {
@@ -125,11 +125,11 @@ section {
   }
 }
 
-.testimonials {
+.testimonials, .gallery {
   text-align: center;
 
-  h2 {
-    color: white;
-  }
+  // h2 {
+  //   color: white;
+  // }
 }
 </style>
