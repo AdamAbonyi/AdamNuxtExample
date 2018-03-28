@@ -371,6 +371,39 @@ export const answerClasses =
         },
         "a_backmount_valves_none": {
             "text": ["text-author-honza"]
+        },
+        "a_backmount_conversion_kit_yes": {
+            "title": ["text-author-honza"],
+            "subTitle": [],
+            "text": ["text-author-honza"],
+            "detail": {
+                "mainText": [],
+                "secondaryText": []
+            }
+        },
+        "a_backmount_conversion_kit_no": {
+            "text": ["text-author-honza"]
+        },
+        "a_sidemount_conversion_kit_bmcl": {
+            "title": ["text-author-honza"],
+            "subTitle": [],
+            "text": ["text-author-honza"],
+            "detail": {
+                "mainText": [],
+                "secondaryText": []
+            }
+        },
+        "a_sidemount_conversion_kit_fmcl": {
+            "title": ["text-author-honza"],
+            "subTitle": [],
+            "text": ["text-author-honza"],
+            "detail": {
+                "mainText": [],
+                "secondaryText": []
+            }
+        },
+        "a_sidemount_conversion_kit_none": {
+            "text": ["text-author-honza"]
         }
     };
 
@@ -407,6 +440,14 @@ export const questionClasses =
         "q_backmount_single_hose_adapter": {
             "title": ["text-author-honza"],
             "text": ["text-author-jakub"]
+        },
+        "q_backmount_conversion_kit": {
+            "title": ["text-author-honza"],
+            "text": ["text-author-honza"]
+        },
+        "q_sidemount_conversion_kit": {
+            "title": ["text-author-honza"],
+            "text": ["text-author-honza"]
         },
         "q_acc_gadget_set": {
             "title": ["text-author-honza"],
