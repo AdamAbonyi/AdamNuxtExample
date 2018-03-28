@@ -214,10 +214,10 @@ function initializeData(data, { answerClasses, questionClasses, accessoryCategor
     return data;
 }
 
-export default function (configuratorData, { answerClasses, questionClasses, accessoryCategoryClasses }) {
+export default function () {
     return {
         state: () => ({
-            data: initializeData(configuratorData, { answerClasses, questionClasses, accessoryCategoryClasses }),
+            data: null,
             state: {
                 completed: false,
                 curSelection: null,
@@ -291,6 +291,17 @@ export default function (configuratorData, { answerClasses, questionClasses, acc
         },
 
         mutations: {
+            initialize(state, { configuratorData, classes: {
+                answerClasses,
+                questionClasses,
+                accessoryCategoryClasses
+            } }) {
+                state.data = initializeData(configuratorData, {
+                    answerClasses,
+                    questionClasses,
+                    accessoryCategoryClasses
+                });
+            },
             reset(state) {
                 state.state.selStack = [];
                 applySelection(state.state, state.data);

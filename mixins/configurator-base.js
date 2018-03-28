@@ -1,7 +1,20 @@
 import { mapState, mapGetters, mapActions, mapMutations } from "vuex";
 
-export default function (customer, configurator) {
+export default function (customer, configurator, configuratorData, {
+    answerClasses,
+    questionClasses,
+    accessoryCategoryClasses
+}) {
     return {
+        fetch({ store }) {
+            store.commit(configurator + "/initialize", {
+                configuratorData, classes: {
+                    answerClasses,
+                    questionClasses,
+                    accessoryCategoryClasses
+                }
+            })
+        },
         data() {
             return {
                 // This is here to decorate the mixin target as the configurator base
