@@ -478,6 +478,56 @@ const configurator =
                     "eur": -150,
                     "usd": -199
                 }
+            },
+            {
+                "id": "a_backmount_conversion_kit_yes",
+                "title": "BACKMOUNT to SIDEMOUNT",
+                "subTitle": "",
+                "text": "YES",
+                "price": {
+                    "eur": 3999,
+                    "usd": 4799
+                },
+                "detail": {
+                    "mainText": "",
+                    "secondaryText": ""
+                }
+            },
+            {
+                "id": "a_backmount_conversion_kit_no",
+                "text": "NO"
+            },
+            {
+                "id": "a_sidemount_conversion_kit_bmcl",
+                "title": "SIDEMOUNT to BMCL",
+                "subTitle": "",
+                "text": "SIDEMOUNT to BMCL",
+                "price": {
+                    "eur": 3999,
+                    "usd": 4799
+                },
+                "detail": {
+                    "mainText": "",
+                    "secondaryText": ""
+                }
+            },
+            {
+                "id": "a_sidemount_conversion_kit_fmcl",
+                "title": "SIDEMOUNT to FMCL",
+                "subTitle": "",
+                "text": "SIDEMOUNT to FMCL",
+                "price": {
+                    "eur": 3999,
+                    "usd": 4799
+                },
+                "detail": {
+                    "mainText": "",
+                    "secondaryText": ""
+                }
+            },
+            {
+                "id": "a_sidemount_conversion_kit_none",
+                "text": "NONE"
             }
         ],
         "questions": [
@@ -556,6 +606,25 @@ const configurator =
                 "answerIds": [
                     "a_backmount_single_hose_adapter_yes",
                     "a_backmount_single_hose_adapter_no"
+                ]
+            },
+            {
+                "id": "q_backmount_conversion_kit",
+                "title": "Conversion kit",
+                "text": "Allows you to convert your backmounted Liberty into a Liberty Sidemount.",
+                "answerIds": [
+                    "a_backmount_conversion_kit_yes",
+                    "a_backmount_conversion_kit_no"
+                ]
+            },
+            {
+                "id": "q_sidemount_conversion_kit",
+                "title": "Conversion kit",
+                "text": "Allows you to convert your Liberty Sidemount into a backmounted Liberty.",
+                "answerIds": [
+                    "a_sidemount_conversion_kit_bmcl",
+                    "a_sidemount_conversion_kit_fmcl",
+                    "a_sidemount_conversion_kit_none"
                 ]
             },
             {
@@ -1003,7 +1072,7 @@ const configurator =
                     "q_sidemount_tanks",
                     "q_sidemount_valves"
                 ],
-                "accessoryListId": "al_default"
+                "accessoryListId": "al_sidemount"
             },
             {
                 "id": "ms_bmcl_nobov",
@@ -1015,7 +1084,7 @@ const configurator =
                     "q_backmount_tanks",
                     "q_backmount_valves"
                 ],
-                "accessoryListId": "al_default"
+                "accessoryListId": "al_backmount"
             },
             {
                 "id": "ms_bmcl_bov",
@@ -1028,7 +1097,7 @@ const configurator =
                     "q_backmount_valves",
                     "q_backmount_single_hose_adapter"
                 ],
-                "accessoryListId": "al_default"
+                "accessoryListId": "al_backmount"
             },
             {
                 "id": "ms_fmcl_nobov",
@@ -1040,7 +1109,7 @@ const configurator =
                     "q_backmount_tanks",
                     "q_backmount_valves"
                 ],
-                "accessoryListId": "al_default"
+                "accessoryListId": "al_backmount"
             },
             {
                 "id": "ms_fmcl_bov",
@@ -1053,7 +1122,7 @@ const configurator =
                     "q_backmount_valves",
                     "q_backmount_single_hose_adapter"
                 ],
-                "accessoryListId": "al_default"
+                "accessoryListId": "al_backmount"
             }
         ],
         "accessoryCategories": [
@@ -1084,13 +1153,26 @@ const configurator =
         ],
         "accessoryLists": [
             {
-                "id": "al_default",
+                "id": "al_backmount",
                 "pageTitle": "",
                 "pageDesc": "",
                 "categorizedQuestions": [
                     {
                         "categoryId": "acat_essential",
                         "questionIds": [
+                            "q_backmount_conversion_kit",
+                            "q_acc_gadget_set"
+                        ]
+                    }
+                ],
+                "id": "al_sidemount",
+                "pageTitle": "",
+                "pageDesc": "",
+                "categorizedQuestions": [
+                    {
+                        "categoryId": "acat_essential",
+                        "questionIds": [
+                            "q_sidemount_conversion_kit",
                             "q_acc_gadget_set"
                         ]
                     }

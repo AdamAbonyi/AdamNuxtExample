@@ -45,7 +45,7 @@ function preFillAccessoryListChoices(conf, confData, environment) {
     for (var i = 0; i < conf.accessoryList.categorizedQuestions.length; i++) {
         var catq = conf.accessoryList.categorizedQuestions[i];
         for (var j = 0; j < catq.questionIds.length; j++) {
-            var q = findQuestion(confData, catq.questionIds[i]);
+            var q = findQuestion(confData, catq.questionIds[j]);
             if (!q) continue;
 
             conf.accessoryListChoices[q.id] = getDefaultAnswer(confData, environment, q).id;
@@ -119,6 +119,10 @@ function applyAccessoryList(conf, confData, environment, accListId) {
     }
 }
 
+function applySummary(state) {
+    state.completed = true;
+}
+
 function saveSelection(conf, answer) {
     if (!!conf.curSelection) conf.selStack.push({ selection: conf.curSelection, answer: answer });
 }
@@ -163,7 +167,7 @@ function initializeData(data, { answerClasses, questionClasses, accessoryCategor
     var supportedEnvs = {};
     for (var i = 0; i < data.answers.length; i++) {
         var a = data.answers[i];
-        var c = answerClasses[a.id];
+        var c = answerClasses[a.id] || {};
 
         a.classes = {
             title: arrayToHash(c.title || []),
@@ -184,7 +188,7 @@ function initializeData(data, { answerClasses, questionClasses, accessoryCategor
 
     for (var i = 0; i < data.questions.length; i++) {
         var q = data.questions[i];
-        var c = questionClasses[q.id];
+        var c = questionClasses[q.id] || {};
 
         q.classes = {
             title: arrayToHash(c.title || []),
@@ -194,7 +198,7 @@ function initializeData(data, { answerClasses, questionClasses, accessoryCategor
 
     for (var i = 0; i < data.accessoryCategories.length; i++) {
         var ac = data.accessoryCategories[i];
-        var c = accessoryCategoryClasses[ac.id];
+        var c = accessoryCategoryClasses[ac.id] || {};
 
         ac.classes = {
             title: arrayToHash(c.title || []),
@@ -312,7 +316,11 @@ export default function (configuratorData, { answerClasses, questionClasses, acc
                     }
                 }
 
-                if (!!targetId) {
+                if (targetId === "summary") {
+                    saveSelection(c, answer);
+                    applySummary(c);
+                }
+                else if (!!targetId) {
                     var sel = findSelection(cd, targetId);
                     if (!!sel) {
                         saveSelection(c, answer);
@@ -337,6 +345,10 @@ export default function (configuratorData, { answerClasses, questionClasses, acc
             },
             selectAccessoryList(state, { accListId, env }) {
                 var c = state.state, cd = state.data;
+                if (accListId === "summary") {
+                    applySummary(c);
+                    return;
+                }
 
                 var accl = findAccessoryList(cd, accListId);
                 if (!accl) return;
@@ -344,7 +356,7 @@ export default function (configuratorData, { answerClasses, questionClasses, acc
                 applyAccessoryList(c, cd, env, accl);
             },
             selectSummary(state) {
-                state.state.completed = true;
+                applySummary(state.state);
             },
             popAnswer(state) {
                 popAnswerInternal(state);
