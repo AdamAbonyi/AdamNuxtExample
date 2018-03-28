@@ -4,17 +4,18 @@
       <Answer v-for="answer in answers" :key="answer.answer.id" :data="answer" :sel="true" />
     </div>
     <div style="text-align: center">
-      <b-btn :disabled="!isBackStepAvailable" @click="popAnswer()">One step back</b-btn>
+      <b-btn :disabled="!base.isBackStepAvailable" @click="base.popAnswer()">One step back</b-btn>
     </div>
   </div>
 </template>
 
 <script>
-import { mapMutations, mapGetters } from "vuex";
-
 import Answer from "~/components/ConfiguratorAnswer.vue";
 
+import ConfiguratorMixin from "~/mixins/configurator";
+
 export default {
+  mixins: [ConfiguratorMixin],
   props: {
     data: undefined
   },
@@ -22,22 +23,14 @@ export default {
     Answer
   },
   computed: {
-    ...mapGetters({
-      isBackStepAvailable: "configurator/isBackStepAvailable",
-      findAnswer: "configurator/findAnswer"
-    }),
-
     answers() {
       return this.data.answers.map(a => {
         return {
-          answer: this.findAnswer(a.id) || {},
+          answer: this.base.findAnswer(a.id) || {},
           selection: this.data
         };
       });
     }
-  },
-  methods: {
-    ...mapMutations({ popAnswer: "configurator/popAnswer" })
   }
 };
 </script>

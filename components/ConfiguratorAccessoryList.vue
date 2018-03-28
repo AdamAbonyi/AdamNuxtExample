@@ -4,31 +4,25 @@
       <Category v-for="category in data.categorizedQuestions" :key="category.categoryId" :data="category" />
     </div>
     <div style="text-align: center">
-      <b-btn @click="popAnswerOrMultiselect()">One step back</b-btn>&nbsp;
-      <b-btn variant="primary" @click="selectSummary()">Continue</b-btn>
+      <b-btn @click="base.popAnswerOrMultiselect()">One step back</b-btn>&nbsp;
+      <b-btn variant="primary" @click="base.selectSummary()">Continue</b-btn>
     </div>
   </div>
 </template>
 
 <script>
-import { mapActions, mapMutations } from "vuex";
-
 import Category from "~/components/ConfiguratorAccessoryListCategory.vue";
 
+import ConfiguratorMixin from "~/mixins/configurator";
+
 export default {
+  mixins: [ConfiguratorMixin],
   props: {
     data: undefined
   },
   components: {
     Category
   },
-  computed: {},
-  methods: {
-    ...mapActions({
-      popAnswerOrMultiselect: "configurator/popAnswerOrMultiselect"
-    }),
-    ...mapMutations({ selectSummary: "configurator/selectSummary" })
-  }
 };
 </script>
 

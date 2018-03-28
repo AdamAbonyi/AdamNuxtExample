@@ -7,7 +7,7 @@
                 <h1 class="jumbotron-heading">Tree Traverser Sample</h1>
                 <p class="lead text-muted">
                     Try it yourself: the tree traversing sample is here to demonstrate the architecture and capabilities of the future
-                    configurator for the CCR Liberty website.
+                    configurator for the DSV/BOV tree.
                 </p>
                 <p>
                     <b-btn variant="primary" @click="reset();">Start the Configurator</b-btn>&nbsp;
@@ -19,6 +19,8 @@
         <div class="album py-5 bg-light" :class="{ 'display-none': !isStarted }">
           <div style="text-align: center">
             <b-btn :variant="envVariant('usd')" @click="selectEnvironment('usd');">USA (USD)</b-btn>&nbsp;
+            <b-btn :variant="envVariant('aud')" @click="selectEnvironment('aud');">Australia (AUD)</b-btn>&nbsp;
+            <b-btn :variant="envVariant('czk')" @click="selectEnvironment('czk');">Czech Rep. (CZK)</b-btn>&nbsp;
             <b-btn :variant="envVariant('eur')" @click="selectEnvironment('eur');">World (EUR)</b-btn>
             <br />
             <br />

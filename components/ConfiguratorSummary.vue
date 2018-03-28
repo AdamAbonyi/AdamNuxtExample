@@ -18,28 +18,21 @@
       </span>
       <br />
       <h4>TOTAL PRICE</h4>
-      {{formatPrice(summary.totalPrice)}}
+      {{base.formatPrice(summary.totalPrice)}}
     </div>
     <div style="text-align: center">
-      <b-btn @click="popAny();">One step back</b-btn>&nbsp;
-      <b-btn @click="reset();">Start over</b-btn>
+      <b-btn @click="base.popAny();">One step back</b-btn>&nbsp;
+      <b-btn @click="base.reset();">Start over</b-btn>
     </div>
   </div>
 </template>
 
 <script>
-import { mapActions, mapMutations, mapGetters } from "vuex";
+import ConfiguratorMixin from "~/mixins/configurator";
 
 export default {
-  components: {},
+  mixins: [ConfiguratorMixin],
   computed: {
-    ...mapGetters({
-      getPrice: "configurator/getPrice",
-      formatPrice: "configurator/formatPrice",
-      findQuestion: "configurator/findQuestion",
-      findAnswer: "configurator/findAnswer"
-    }),
-
     summary() {
       var totalPrice = 0;
       var data = {
@@ -49,12 +42,12 @@ export default {
         totalPrice: {}
       };
 
-      var c = this.$store.state.configurator.state;
-      var env = this.$store.state.customer.environment;
-      var getPrice = this.getPrice;
-      var formatPrice = this.formatPrice;
-      var findQuestion = this.findQuestion;
-      var findAnswer = this.findAnswer;
+      var c = this.base.state;
+      var env = this.base.environment;
+      var getPrice = this.base.getPrice;
+      var formatPrice = this.base.formatPrice;
+      var findQuestion = this.base.findQuestion;
+      var findAnswer = this.base.findAnswer;
 
       for (var i = 0; i < c.selStack.length; i++) {
         var price = getPrice(c.selStack[i].answer.price);
@@ -111,10 +104,6 @@ export default {
 
       return data;
     }
-  },
-  methods: {
-    ...mapActions({ popAny: "configurator/popAny" }),
-    ...mapMutations({ reset: "configurator/reset" })
   }
 };
 </script>

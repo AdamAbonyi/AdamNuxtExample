@@ -9,11 +9,12 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
-
 import Question from "~/components/ConfiguratorQuestion.vue";
 
+import ConfiguratorMixin from "~/mixins/configurator";
+
 export default {
+  mixins: [ConfiguratorMixin],
   props: {
     data: undefined
   },
@@ -21,19 +22,13 @@ export default {
     Question
   },
   computed: {
-    ...mapGetters({
-      findAccessoryCategory: "configurator/findAccessoryCategory",
-      findQuestion: "configurator/findQuestion"
-    }),
-
     category() {
-      return this.findAccessoryCategory(this.data.categoryId);
+      return this.base.findAccessoryCategory(this.data.categoryId);
     },
     questions() {
-      return this.data.questionIds.map(q => this.findQuestion(q) || {});
+      return this.data.questionIds.map(q => this.base.findQuestion(q) || {});
     }
-  },
-  methods: {}
+  }
 };
 </script>
 

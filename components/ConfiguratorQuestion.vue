@@ -11,11 +11,12 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
-
 import Answer from "~/components/ConfiguratorAnswer.vue";
 
+import ConfiguratorMixin from "~/mixins/configurator";
+
 export default {
+  mixins: [ConfiguratorMixin],
   props: {
     data: undefined
   },
@@ -23,14 +24,10 @@ export default {
     Answer
   },
   computed: {
-    ...mapGetters({
-      findAnswer: "configurator/findAnswer"
-    }),
-
     answers() {
       return this.data.answerIds.map(a => {
         return {
-          answer: this.findAnswer(a) || {},
+          answer: this.base.findAnswer(a) || {},
           question: this.data
         };
       });

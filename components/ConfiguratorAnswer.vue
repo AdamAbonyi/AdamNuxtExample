@@ -4,7 +4,7 @@
       <h4 v-if="!!answer.subTitle" :class="[{ 'card-subtitle': true }, answer.classes.subTitle]" style="margin-bottom: 15px">{{answer.subTitle}}</h4>
       <p v-if="answer.detail.mainText" :class="[{ 'card-text': true }, answer.classes.detail.mainText]">{{answer.detail.mainText}}</p>
       <p v-if="answer.detail.secondaryText" :class="[{ 'card-text': true, 'small': true }, answer.classes.detail.secondaryText]">{{answer.detail.secondaryText}}</p>
-      <p class="card-text">Price: {{formatPrice(answer.price)}}</p>
+      <p class="card-text">Price: {{base.formatPrice(answer.price)}}</p>
       <img v-for="img in answer.detail.gallery" :key="img.url" :src="img.url" :alt="img.alt" :title="img.alt" class="border" style="min-width: 50px; width: 50px; min-height: 50px; height: 50px; object-fit: contain;" />
       <div slot="modal-footer">
         <b-btn variant="primary" :class="{'disabled': !answer.id, 'backcolor-lightgreen': isAnswerSelected}"
@@ -25,7 +25,7 @@
            style="height: 255px; object-fit: contain;" />
       <div class="card-body">
         <p v-if="sel && !!answer.text" :class="[{ 'card-text': true }, answer.classes.text]">{{answer.text}}</p>
-        <p class="card-text">Price: {{formatPrice(answer.price)}}</p>
+        <p class="card-text">Price: {{base.formatPrice(answer.price)}}</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
             <b-btn v-if="!!answer.detail" class="btn-outline-secondary" @click="modalShown = !modalShown">
@@ -43,9 +43,10 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from "vuex";
+import ConfiguratorMixin from "~/mixins/configurator";
 
 export default {
+  mixins: [ConfiguratorMixin],
   props: {
     data: undefined,
     sel: true
@@ -57,11 +58,6 @@ export default {
   },
   components: {},
   computed: {
-    ...mapGetters({
-      formatPrice: "configurator/formatPrice",
-      configuratorAnswerSelected: "configurator/isAnswerSelected"
-    }),
-
     answer() {
       return this.data.answer;
     },
@@ -71,7 +67,7 @@ export default {
         : this.data.selection.id;
     },
     isAnswerSelected() {
-      var t = this.configuratorAnswerSelected({
+      var t = this.base.isAnswerSelected({
         answerId: this.answer.id,
         questionId: this.questionId
       });
@@ -88,10 +84,8 @@ export default {
     }
   },
   methods: {
-    ...mapActions({ configuratorSelectAnswer: "configurator/selectAnswer" }),
-
     selectAnswer() {
-      this.configuratorSelectAnswer({
+      this.base.selectAnswer({
         answerId: this.answer.id,
         questionId: this.questionId
       });
