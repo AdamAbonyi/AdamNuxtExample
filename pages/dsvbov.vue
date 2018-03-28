@@ -9,12 +9,26 @@
 </template>
 
 <script>
+import configuratorData from "~/data/configurator-dsvbov";
+import {
+  answerClasses,
+  questionClasses,
+  accessoryCategoryClasses
+} from "~/data/configurator-dsvbov-classes";
+
 import Configurator from "~/components/Configurator.vue";
 
 import configuratorBaseMixinFactory from "~/mixins/configurator-base";
 
 export default {
-  mixins: [configuratorBaseMixinFactory("customer", "configurator-dsvbov")],
+  mixins: [
+    configuratorBaseMixinFactory(
+      "customer",
+      "configurator-dsvbov",
+      configuratorData,
+      { answerClasses, questionClasses, accessoryCategoryClasses }
+    )
+  ],
   components: {
     Configurator
   }
