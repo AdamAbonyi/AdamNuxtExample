@@ -1,21 +1,17 @@
 import { mapState, mapGetters, mapActions, mapMutations } from "vuex";
 
-import Selection from "~/components/ConfiguratorSelection.vue";
-import MultiSelection from "~/components/ConfiguratorMultiSelection.vue";
-import AccList from "~/components/ConfiguratorAccessoryList.vue";
-import Summary from "~/components/ConfiguratorSummary.vue";
-
 export default function (customer, configurator) {
     return {
-        components: {
-            Selection,
-            MultiSelection,
-            AccList,
-            Summary
+        data() {
+            return {
+                // This is here to decorate the mixin target as the configurator base
+                configurator_base__: true
+            };
         },
         computed: {
             ...mapState(customer, ["environment"]),
             ...mapState(configurator, ["state"]),
+            ...mapState(configurator, { supportedEnvs: s => s.data.supportedEnvs }),
             ...mapGetters(configurator, [
                 "isStarted",
                 "isBackStepAvailable",
@@ -26,42 +22,7 @@ export default function (customer, configurator) {
                 "findAnswer",
                 "findAccessoryCategory",
                 "findQuestion"
-            ]),
-
-            envVariant() {
-                return function (env) {
-                    return this.environment === env
-                        ? "secondary"
-                        : "primary";
-                }.bind(this);
-            },
-            getComponentName() {
-                switch (this.currentState) {
-                    case "single-sel":
-                        return "Selection";
-                    case "multi-sel":
-                        return "MultiSelection";
-                    case "acc-list":
-                        return "AccList";
-                    case "summary":
-                        return "Summary";
-                    default:
-                        return undefined;
-                }
-            },
-            getComponentData() {
-                var c = this.state;
-                switch (this.currentState) {
-                    case "single-sel":
-                        return c.curSelection;
-                    case "multi-sel":
-                        return c.multiSelection;
-                    case "acc-list":
-                        return c.accessoryList;
-                    default:
-                        return undefined;
-                }
-            }
+            ])
         },
         methods: {
             ...mapActions(configurator, [

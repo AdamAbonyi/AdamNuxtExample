@@ -1,6 +1,6 @@
 function findConfiguratorBase(_) {
     var base = _;
-    while (!!base && !base.getComponentName) {
+    while (!!base && !base.configurator_base__) {
         base = base.$parent;
     }
     return base;

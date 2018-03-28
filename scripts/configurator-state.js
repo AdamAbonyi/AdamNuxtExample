@@ -160,6 +160,7 @@ function initializeData(data, { answerClasses, questionClasses, accessoryCategor
     initializeStructure(data, "accessoryCategories", "accessoryCategoryById");
     initializeStructure(data, "accessoryLists", "accessoryListById");
 
+    var supportedEnvs = {};
     for (var i = 0; i < data.answers.length; i++) {
         var a = data.answers[i];
         var c = answerClasses[a.id];
@@ -173,7 +174,13 @@ function initializeData(data, { answerClasses, questionClasses, accessoryCategor
                 secondaryText: arrayToHash((c.detail || {}).secondaryText || [])
             }
         }
+
+        if (!!a.price) {
+            supportedEnvs = { ...supportedEnvs, ...a.price };
+        }
     }
+
+    data.supportedEnvs = Object.keys(supportedEnvs);
 
     for (var i = 0; i < data.questions.length; i++) {
         var q = data.questions[i];
