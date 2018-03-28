@@ -36,7 +36,7 @@
 import configuratorBaseMixinFactory from "~/mixins/configurator-base";
 
 export default {
-  mixins: [configuratorBaseMixinFactory("customer", "configurator")]
+  mixins: [configuratorBaseMixinFactory("customer", "configurator-dsvbov")]
 };
 </script>
 

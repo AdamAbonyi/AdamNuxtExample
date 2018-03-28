@@ -1,5 +1,5 @@
-import configuratorData from "~/data/configurator-liberty"
-import { answerClasses, questionClasses, accessoryCategoryClasses } from "~/data/configurator-liberty-classes"
+import configuratorData from "~/data/configurator-dsvbov"
+import { answerClasses, questionClasses, accessoryCategoryClasses } from "~/data/configurator-dsvbov-classes"
 
 import stateFactory from "~/scripts/configurator-state"
 
