@@ -25,12 +25,6 @@ export default {
 </script>
 
 <style lang="scss">
-.imgCenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .text-center {
   text-align: center;
 }

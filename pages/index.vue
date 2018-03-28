@@ -20,6 +20,19 @@
     <br /><br /><br /><br /><br /><br />
   </section>
 
+  <section id="rebreather" class="rebreathers" >
+    <h2>Fault-tolerant Rebreather</h2>
+    <p class="subText">The Liberty rebreather is designed to be fault-tolerant. No single malfunction in the electronic system could cause a breakdown of the whole apparatus. And even multiple malfunctions often do not lead to a complete breakdown.</p>
+    <div class="row column">
+      <Rebreather title="4 oxygen sensor" link="4-oxygen-sensors"></Rebreather>
+      <Rebreather title="2 helium sensors patented technology" link="4-oxygen-sensors"></Rebreather>
+      <Rebreather title="2 methods of ppO2 measurement" link="4-oxygen-sensors"></Rebreather>
+      <Rebreather title="2 independent computers" link="4-oxygen-sensors"></Rebreather>
+      <Rebreather title="2 solenoid valves" link="4-oxygen-sensors"></Rebreather>
+      <Rebreather title="4 displays" link="4-oxygen-sensors"></Rebreather>
+    </div>
+  </section>
+
   <section id="technicals" class="technicals">
     <h2>Technicals</h2>
     <div class="row column">
@@ -70,12 +83,14 @@
 <script>
 import Testimonial from "~/components/Testimonial";
 import TechnicalBox from "~/components/TechnicalBox";
+import Rebreather from "~/components/Rebreather";
 
 import scrollTo from "~/scripts/scroll-to";
 
 export default {
   components: {
     Testimonial,
+    Rebreather,
     TechnicalBox
   },
   created() {},
@@ -99,6 +114,15 @@ section {
 
 .technicals > h2:first-child {
   text-align: center;
+}
+
+.rebreathers {
+  text-align: center;
+
+  h2,
+  p {
+    text-align: center;
+  }
 }
 
 .testimonials {
