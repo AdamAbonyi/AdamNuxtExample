@@ -1,4 +1,4 @@
-const answerClasses =
+export const answerClasses =
     {
         "a_backmount": {
             "title": ["text-author-honza"],
@@ -100,279 +100,340 @@ const answerClasses =
             }
         },
         "a_bcd_horseshoe": {
-            "title": [],
-            "subTitle": [],
-            "text": [],
+            "title": ["text-author-honza"],
+            "subTitle": ["text-author-honza"],
+            "text": ["text-author-jakub"],
             "detail": {
-                "mainText": [],
+                "mainText": ["text-author-jakub"],
                 "secondaryText": []
             }
         },
         "a_bcd_doughnut": {
-            "title": [],
-            "subTitle": [],
-            "text": [],
+            "title": ["text-author-honza"],
+            "subTitle": ["text-author-jakub"],
+            "text": ["text-author-jakub"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-jakub"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_bcd_bungee": {
-            "title": [],
-            "subTitle": [],
-            "text": [],
+            "title": ["text-author-honza"],
+            "subTitle": ["text-author-jakub"],
+            "text": ["text-author-jakub"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-jakub"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_scrubber_shortened": {
-            "title": [],
-            "subTitle": [],
-            "text": [],
+            "title": ["text-author-honza"],
+            "subTitle": ["text-author-honza"],
+            "text": ["text-author-jakub"],
             "detail": {
-                "mainText": [],
+                "mainText": ["text-author-jakub"],
                 "secondaryText": []
             }
         },
         "a_scrubber_standard": {
-            "title": [],
-            "subTitle": [],
-            "text": [],
+            "title": ["text-author-honza"],
+            "subTitle": ["text-author-honza"],
+            "text": ["text-author-jakub"],
             "detail": {
-                "mainText": [],
+                "mainText": ["text-author-jakub"],
                 "secondaryText": []
             }
         },
         "a_scrubber_xl": {
-            "title": [],
-            "subTitle": [],
-            "text": [],
+            "title": ["text-author-honza"],
+            "subTitle": ["text-author-honza"],
+            "text": ["text-author-jakub"],
             "detail": {
-                "mainText": [],
+                "mainText": ["text-author-jakub"],
                 "secondaryText": []
             }
         },
         "a_backplate_standard": {
-            "title": [],
-            "subTitle": [],
-            "text": [],
+            "title": ["text-author-honza"],
+            "subTitle": ["text-author-honza"],
+            "text": ["text-author-jakub"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-jakub"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_backplate_titan": {
-            "title": [],
-            "subTitle": [],
-            "text": [],
+            "title": ["text-author-honza"],
+            "subTitle": ["text-author-honza"],
+            "text": ["text-author-jakub"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-jakub"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_stand_steel_standard": {
-            "title": [],
-            "subTitle": [],
-            "text": [],
+            "title": ["text-author-honza"],
+            "subTitle": ["text-author-honza"],
+            "text": ["text-author-jakub"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-jakub"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_stand_steel_lw": {
-            "title": [],
-            "subTitle": [],
-            "text": [],
+            "title": ["text-author-honza"],
+            "subTitle": ["text-author-honza"],
+            "text": ["text-author-jakub"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-jakub"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_stand_titanium_standard": {
-            "title": [],
-            "subTitle": [],
-            "text": [],
+            "title": ["text-author-honza"],
+            "subTitle": ["text-author-honza"],
+            "text": ["text-author-jakub"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-jakub"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_stand_titanium_lw": {
-            "title": [],
-            "subTitle": [],
-            "text": [],
+            "title": ["text-author-honza"],
+            "subTitle": ["text-author-honza"],
+            "text": ["text-author-jakub"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-jakub"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_bmcl_harness_regular": {
             "title": [],
             "subTitle": [],
-            "text": [],
+            "text": ["text-author-honza"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-honza"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_bmcl_harness_extended": {
             "title": [],
             "subTitle": [],
-            "text": [],
+            "text": ["text-author-honza"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-honza"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_fmcl_harness_regular": {
             "title": [],
             "subTitle": [],
-            "text": [],
+            "text": ["text-author-honza"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-honza"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_fmcl_harness_extended": {
             "title": [],
             "subTitle": [],
-            "text": [],
+            "text": ["text-author-honza"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-honza"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_backmount_quick_release_yes_right": {
             "title": [],
             "subTitle": [],
-            "text": [],
+            "text": ["text-author-honza"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-jakub"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_backmount_quick_release_yes_left": {
             "title": [],
             "subTitle": [],
-            "text": [],
+            "text": ["text-author-honza"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-jakub"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_backmount_quick_release_no": {
-            "text": []
+            "text": ["text-author-honza"]
         },
         "a_backmount_single_hose_adapter_yes": {
             "title": [],
             "subTitle": [],
-            "text": [],
+            "text": ["text-author-honza"],
             "detail": {
                 "mainText": [],
                 "secondaryText": []
             }
         },
         "a_backmount_single_hose_adapter_no": {
-            "text": []
+            "text": ["text-author-honza"]
         },
         "a_acc_gadget_set_yes": {
-            "title": [],
+            "title": ["text-author-honza"],
             "subTitle": [],
-            "text": [],
+            "text": ["text-author-honza"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-jakub"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_acc_gadget_set_no": {
-            "text": []
+            "text": ["text-author-honza"]
         },
         "a_sidemount_tanks_usa": {
             "title": [],
             "subTitle": [],
-            "text": [],
+            "text": ["text-author-honza"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-honza"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_sidemount_tanks_world": {
             "title": [],
             "subTitle": [],
-            "text": [],
+            "text": ["text-author-honza"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-honza"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_sidemount_tanks_none": {
-            "text": []
+            "text": ["text-author-honza"]
         },
-        "a_sidemount_valves_usa":
-            {
-                "title": [],
-                "subTitle": [],
-                "text": [],
-                "detail": {
-                    "mainText": [],
-                    "secondaryText": []
-                }
-            },
+        "a_sidemount_valves_usa": {
+            "title": [],
+            "subTitle": [],
+            "text": ["text-author-honza"],
+            "detail": {
+                "mainText": ["text-author-honza"],
+                "secondaryText": ["text-author-jakub"]
+            }
+        },
         "a_sidemount_valves_world": {
             "title": [],
             "subTitle": [],
-            "text": [],
+            "text": ["text-author-honza"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-honza"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_sidemount_valves_none": {
-            "text": []
+            "text": ["text-author-honza"]
         },
         "a_backmount_tanks_usa": {
             "title": [],
             "subTitle": [],
-            "text": [],
+            "text": ["text-author-honza"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-honza"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_backmount_tanks_world": {
             "title": [],
             "subTitle": [],
-            "text": [],
+            "text": ["text-author-honza"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-honza"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_backmount_tanks_none": {
-            "text": []
+            "text": ["text-author-honza"]
         },
         "a_backmount_valves_usa": {
             "title": [],
             "subTitle": [],
-            "text": [],
+            "text": ["text-author-honza"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-honza"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_backmount_valves_world": {
             "title": [],
             "subTitle": [],
-            "text": [],
+            "text": ["text-author-honza"],
             "detail": {
-                "mainText": [],
-                "secondaryText": []
+                "mainText": ["text-author-honza"],
+                "secondaryText": ["text-author-jakub"]
             }
         },
         "a_backmount_valves_none": {
-            "text": []
+            "text": ["text-author-honza"]
         }
     };
 
-export default { answerClasses };
+export const questionClasses =
+    {
+        "q_sidemount_tanks": {
+            "title": ["text-author-honza"],
+            "text": []
+        },
+        "q_sidemount_valves": {
+            "title": ["text-author-honza"],
+            "text": []
+        },
+        "q_backmount_tanks": {
+            "title": ["text-author-honza"],
+            "text": []
+        },
+        "q_backmount_valves": {
+            "title": ["text-author-honza"],
+            "text": []
+        },
+        "q_bmcl_harness": {
+            "title": ["text-author-honza"],
+            "text": ["text-author-honza"]
+        },
+        "q_fmcl_harness": {
+            "title": ["text-author-honza"],
+            "text": ["text-author-honza"]
+        },
+        "q_backmount_quick_release": {
+            "title": ["text-author-honza"],
+            "text": ["text-author-honza"]
+        },
+        "q_backmount_single_hose_adapter": {
+            "title": ["text-author-honza"],
+            "text": ["text-author-jakub"]
+        },
+        "q_acc_gadget_set": {
+            "title": ["text-author-honza"],
+            "text": ["text-author-honza"]
+        }
+    };
+
+export const accessoryCategoryClasses =
+    {
+        "acat_essential": {
+            "title": ["text-author-honza"],
+            "shortTitle": ["text-author-honza"],
+            "text": []
+        },
+        "acat_head": {
+            "title": ["text-author-honza"],
+            "shortTitle": ["text-author-honza"],
+            "text": []
+        },
+        "acat_loops": {
+            "title": ["text-author-honza"],
+            "shortTitle": ["text-author-honza"],
+            "text": []
+        },
+        "acat_consumables": {
+            "title": ["text-author-honza"],
+            "shortTitle": ["text-author-honza"],
+            "text": []
+        }
+    };

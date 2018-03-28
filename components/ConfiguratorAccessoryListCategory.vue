@@ -1,8 +1,8 @@
 <template>
   <div>
     <div v-if="!!category" style="text-align: center; margin-bottom: 40px">
-      <h1 class="card-title">{{category.title}}</h1>
-      <h4 v-if="!!category.text" class="card-subtitle">{{category.text}}</h4>
+      <h1 :class="[{ 'card-title': true }, category.classes.title]">{{category.title}}</h1>
+      <h4 v-if="!!category.text" :class="[{ 'card-subtitle': true }, category.classes.text]">{{category.text}}</h4>
     </div>
     <Question v-for="question in questions" :key="question.id" :data="question" />
   </div>

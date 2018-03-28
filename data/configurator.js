@@ -142,12 +142,8 @@ const configurator =
                 "title": "BCD-Horseshoe",
                 "subTitle": "Standard horsehoe shape BCD",
                 "text": "Time-proven shape, fits to most divers. It allows to separate lift on sides and compensate heavier side with bailout cylinder.",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
-                    "mainText": "",
+                    "mainText": "A horseshoe BCD is commonly used in technical diving. 22l volume of the wing provides sufficient lift to neutral or positive buoyancy even when the unit is totally flooded. The though CORDURA 2000 is used for the maximum resistance.",
                     "secondaryText": ""
                 }
             },
@@ -156,13 +152,9 @@ const configurator =
                 "title": "BCD-Doughnut",
                 "subTitle": "Clean shape, lower drag, more lift on but",
                 "text": "Buoyancy compensator in closed doughnut shape allows to lift the backside. It is important when wetsuit is used. Compact shape affects hydrodynamics positively.",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "Doughnut style wing provides a real stability. It allows to dump the gas from entire wing in all positions and doesn’t make air pouches. Additional lift in the backside helps to divers move the center of lift back. It is useful especially when wetsuit or shorty suit is used and diver has “heavy legs”. Thanks to gas in back part is possible reduce the outline and make it slimmer.",
+                    "secondaryText": "22l volume of the wing provides sufficient lift to neutral or positive buoyancy even when the unit is totally flooded. The though CORDURA 2000 is used for the maximum resistance."
                 }
             },
             {
@@ -170,26 +162,18 @@ const configurator =
                 "title": "BCD-Bungee",
                 "subTitle": "Squeezed to be slim",
                 "text": "Buoyancy compensator is banded with adjustable bungee cord to significantly reduce cross sectional area. BCD-Bungee has horseshoe shape.",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "Bungee BCD uses the same horseshoe shape as the standard wing but it is banded with bungee cord. Every diver can adjust the strength of the cord and affect the BCD’s shape. The bungee cord is woven from one side to bend the wing in a half.  This solution doesn’t make any death spaces inside the wing where the gas would get stuck. Small profile of bungee wing significantly reduces a drag in the water.",
+                    "secondaryText": "22l volume of the wing provides sufficient lift to neutral or positive buoyancy even when the unit is totally flooded. CORDURA 1000 is used for suppleness and resistance."
                 }
             },
             {
                 "id": "a_scrubber_shortened",
                 "title": "Shortened",
                 "subTitle": "2.5 kg, 5.58 lb",
-                "text": "This shortened scrubber provides 4-6 hours of scrubbing time.",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
+                "text": "4-6 hours of scrubbing time. Shortened version for easier manipulation with sidemounted Liberty.",
                 "detail": {
-                    "mainText": "",
+                    "mainText": "The design reduces the inner space. The lid is made from thin stainless steel plate, scrubber is from stainless steel mesh, water trap is reduced to minimum. This allows to keep the same volume and scrubbing capacity as a standard scrubber but with shorter canister. It allows better maneuverability. We recommend to combine it with titanium backplate for neutral buoyancy.",
                     "secondaryText": ""
                 }
             },
@@ -198,12 +182,8 @@ const configurator =
                 "title": "Standard",
                 "subTitle": "2.5 kg, 5.58 lb",
                 "text": "Standard sized scrubber provides 4-6 hours of scrubbing time. Very comfortable and intuitive to fill.",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
-                    "mainText": "",
+                    "mainText": "The inner scrubber is made from very fine stainless steel mesh, lid from thick plastic. It allows very comfortable filling. Opening and closing is very quick and simple. The very functional water trap is placed in the bottom. During the harsh test according to standard EN 14143:2013 was proved that the scrubber duration is 2 h 48 min. The test conditions were 4°C, breathing 40 l/min, production of 1.6l CO2/min. Usual stack time is 4 hours in cold water and 6 hours in warm water with moderate effort.",
                     "secondaryText": ""
                 }
             },
@@ -216,12 +196,8 @@ const configurator =
                     "eur": 885,
                     "usd": 778
                 },
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
-                    "mainText": "",
+                    "mainText": "The Extra large scrubber design reduces the inner space. The lid is made from thin stainless steel plate, scrubber is from stainless steel mesh, water trap is reduced to minimum. This allows to keep the same outer dimensions with bigger inner volume and scrubbing capacity. This scrubber is possible to use for 5 hours in cold water to 8 hours in warm water and moderate effort.",
                     "secondaryText": ""
                 }
             },
@@ -230,13 +206,9 @@ const configurator =
                 "title": "Standard",
                 "subTitle": "3.4 kg",
                 "text": "Optimal for cold water diving where an additional weight is needed.",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "Stainless steel backplate weights 3.4 kg (7.5 lb). It predestines the backplate for cold water diving where drysuit with thick undersuit is used and extra weight is needed. Buoyancy of Liberty with stainless steel backplate and stand is aprox 5 kg negative. Good skilled diver with membrane drysuit doesn’t need any extra weight with this configuration.",
+                    "secondaryText": "Liberty backplate is based on Hogarthian backplate with simplicity in its mind but is adjusted for Liberty needs. The part of the backplate is locking system for attaching canister and head. This smart system assures that the canister does not release and the head does not be open when diver has it on his back. Integral part of the backplate is a stand which can be chosen from a variety of kinds."
                 }
             },
             {
@@ -248,13 +220,9 @@ const configurator =
                     "eur": 342,
                     "usd": 410
                 },
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "Titanium backplate weights 1.2 kg (2.6 lb). Titanium reduce the weight significantly (up to 3.2 kg 7 lb less when titanium standard stand is used) for that reason is ideal for traveling and for diving in warm water where just wetsuit or very thin drysuit undergarment is used.",
+                    "secondaryText": "Liberty backplate is based on Hogarthian backplate with simplicity in its mind but is adjusted for Liberty needs. The part of the backplate is locking system for attaching canister and head. This smart system assures that the canister does not release and the head does not be open when diver has it on his back. Integral part of the backplate is a stand which can be chosen from a variety of kinds."
                 }
             },
             {
@@ -262,13 +230,9 @@ const configurator =
                 "title": "Steel-Standard",
                 "subTitle": "Stainless steel stand – standard size",
                 "text": "Keeps the unit compact. Ideal for short people.",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "Stand Standard is short and compact and for that reason is intended for overhead environment where the space is limited. Shorter length is beneficial for ladies or smaller men. Weight 0.9 kg (2 lb).",
+                    "secondaryText": "The stand is an integral part of liberty backplate. It has four main functions: keep the unit standing when is on the land, canister support (part of the canister locking system), lumbar support for diver (unit itself is uncomfortably short), 1st stage regulators protection. The design reduces a risk of tangling in line."
                 }
             },
             {
@@ -280,13 +244,9 @@ const configurator =
                     "eur": 104,
                     "usd": 125
                 },
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "Long and wide stand provides extra stability when is on land and the unit stays securely even on the boat or bumpy surface. Longer stand is beneficial for men or taller ladies when it provides better lumbar support and much better comfort during putting the unit on and off and sitting on the bench or inflatable tube of the boat. The inner space of the stand allows to attach argon tank. It is possible to attach additional D-ring directly to the stand for attaching bailout cylinders or other gear. Weight of stainless steel LONG&WIDE Stand 1.3 kg (2.9 lb).",
+                    "secondaryText": "The stand is an integral part of liberty backplate. It has four main functions: keep the unit standing when is on the land, canister support (part of the canister locking system), lumbar support for diver (unit itself is uncomfortably short), 1st stage regulators protection. The design reduces a risk of tangling in line."
                 }
             },
             {
@@ -298,13 +258,9 @@ const configurator =
                     "eur": 192,
                     "usd": 230
                 },
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "Stand Standard is short and compact and for that reason is intended for overhead environment where the space is limited. Shorter length is beneficial for ladies or smaller men. Weight 0.4 kg (0.9 lb).",
+                    "secondaryText": "The stand is an integral part of liberty backplate. It has four main functions: keep the unit standing when is on the land, canister support (part of the canister locking system), lumbar support for diver (unit itself is uncomfortably short), 1st stage regulators protection. The design reduces a risk of tangling in line."
                 }
             },
             {
@@ -316,88 +272,68 @@ const configurator =
                     "eur": 345,
                     "usd": 414
                 },
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "Long and wide stand provides extra stability when is on land and the unit stays securely even on the boat or bumpy surface. Longer stand is beneficial for men or taller ladies when it provides better lumbar support and much better comfort during putting the unit on and off and sitting on the bench or inflatable tube of the boat. The inner space of the stand allows to attach argon tank. It is possible to attach additional D-ring directly to the stand for attaching bailout cylinders or other gear. Weight of Titanium LONG&WIDE Stand 0.6 kg (1.3 lb).",
+                    "secondaryText": "The stand is an integral part of liberty backplate. It has four main functions: keep the unit standing when is on the land, canister support (part of the canister locking system), lumbar support for diver (unit itself is uncomfortably short), 1st stage regulators protection. The design reduces a risk of tangling in line."
                 }
             },
             {
                 "id": "a_bmcl_harness_regular",
                 "text": "Regular",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "defaultFor": "all",
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "For divers up to 185 cm (6'1\") and under 100 kg (220 lbs).",
+                    "secondaryText": "Standard hogarthian style webbing with D-rings and buckle."
                 }
             },
             {
                 "id": "a_bmcl_harness_extended",
                 "text": "Extended",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "For divers taller than 185 cm (6'1\") and over 100 kg (220 lbs).",
+                    "secondaryText": "Standard hogarthian style webbing with D-rings and buckle."
                 }
             },
             {
                 "id": "a_fmcl_harness_regular",
                 "text": "Regular",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "defaultFor": "all",
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "For divers up to 185 cm (6'1\") and under 100 kg (220 lbs).",
+                    "secondaryText": "Standard hogarthian style webbing with D-rings and buckle."
                 }
             },
             {
                 "id": "a_fmcl_harness_extended",
                 "text": "Extended",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "For divers taller than 185 cm (6'1\") and over 100 kg (220 lbs).",
+                    "secondaryText": "Standard hogarthian style webbing with D-rings and buckle."
                 }
             },
             {
                 "id": "a_backmount_quick_release_yes_right",
                 "text": "YES, on the right shoulder strap",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
+                "price": {
+                    "eur": 105,
+                    "usd": 98
                 },
                 "defaultFor": "all",
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "It allows to take off the unit very quickly. It is very comfortable and easy and is very helpful especially when the unit is taken off on the surface and waves. Buckle is made from stainless steel and it is almost impossible to destroy it. Press of both levers is necessary for opening the buckle. It secures from accidental buckle opening.",
+                    "secondaryText": "Please consider on which side is better to place the quick release buckle. The position of drysuit dump valve and placing additional gear on the harness has to be taken in your consideration."
                 }
             },
             {
                 "id": "a_backmount_quick_release_yes_left",
                 "text": "YES, on the left shoulder strap",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
+                "price": {
+                    "eur": 105,
+                    "usd": 98
                 },
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "It allows to take off the unit very quickly. It is very comfortable and easy and is very helpful especially when the unit is taken off on the surface and waves. Buckle is made from stainless steel and it is almost impossible to destroy it. Press of both levers is necessary for opening the buckle. It secures from accidental buckle opening.",
+                    "secondaryText": "Please consider on which side is better to place the quick release buckle. The position of drysuit dump valve and placing additional gear on the harness has to be taken in your consideration."
                 }
             },
             {
@@ -407,10 +343,6 @@ const configurator =
             {
                 "id": "a_backmount_single_hose_adapter_yes",
                 "text": "YES",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "price": {
                     "eur": 79,
                     "usd": 98
@@ -427,18 +359,16 @@ const configurator =
             },
             {
                 "id": "a_acc_gadget_set_yes",
+                "title": "Liberty Gadget Set",
+                "subTitle": "",
                 "text": "YES",
                 "price": {
                     "eur": 431,
                     "usd": 405
                 },
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "Advantageous set of gadgets.",
+                    "secondaryText": "Set includes GPS module, Head cover, Backplate D-ring – 2ks, CCR Liberty caps set, Hanging loop for argon tank."
                 }
             },
             {
@@ -448,27 +378,19 @@ const configurator =
             {
                 "id": "a_sidemount_tanks_usa",
                 "text": "USA / CANADA",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "defaultFor": "usd",
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "USDOT / 3/4 NPSM",
+                    "secondaryText": "3442 PSI, 2 liter, 15 Cubic Feet, weight 6.6 lb"
                 }
             },
             {
                 "id": "a_sidemount_tanks_world",
                 "text": "Rest of the world",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "defaultFor": "all",
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "EU certified / M 25*2",
+                    "secondaryText": "2 liter, 200 bar, 2.6 kg"
                 }
             },
             {
@@ -482,27 +404,19 @@ const configurator =
             {
                 "id": "a_sidemount_valves_usa",
                 "text": "USA / CANADA",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "defaultFor": "usd",
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "Burst disc",
+                    "secondaryText": "G 5/8 (DIL + OXY)"
                 }
             },
             {
                 "id": "a_sidemount_valves_world",
                 "text": "Rest of the world",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "defaultFor": "all",
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "No burst disc",
+                    "secondaryText": "G 5/8 (DIL) – M 26*2  (OXY) Nautec - exceptional quality valve"
                 }
             },
             {
@@ -516,27 +430,19 @@ const configurator =
             {
                 "id": "a_backmount_tanks_usa",
                 "text": "USA / CANADA",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "defaultFor": "usd",
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "USDOT / 3/4 NPSM",
+                    "secondaryText": "3442 PSI, 2 liter, 15 Cubic Feet, weight 6.6 lb"
                 }
             },
             {
                 "id": "a_backmount_tanks_world",
                 "text": "Rest of the world",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "defaultFor": "all",
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "EU certified / M 25*2",
+                    "secondaryText": "2 liter, 200 bar, 2.6 kg"
                 }
             },
             {
@@ -550,27 +456,19 @@ const configurator =
             {
                 "id": "a_backmount_valves_usa",
                 "text": "USA / CANADA",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "defaultFor": "usd",
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "Burst disc",
+                    "secondaryText": "G 5/8 (DIL + OXY)"
                 }
             },
             {
                 "id": "a_backmount_valves_world",
                 "text": "Rest of the world",
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
                 "defaultFor": "all",
                 "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
+                    "mainText": "No burst disc",
+                    "secondaryText": "G 5/8 (DIL) – M 26*2  (OXY) Nautec - exceptional quality valve"
                 }
             },
             {
@@ -654,7 +552,7 @@ const configurator =
             {
                 "id": "q_backmount_single_hose_adapter",
                 "title": "Single hose adapter",
-                "text": "",
+                "text": "Singlehose adapter connects 2nd stage regulator hose with MAV LP hose together so you manage with single hose for both devices. Do you want to use it?",
                 "answerIds": [
                     "a_backmount_single_hose_adapter_yes",
                     "a_backmount_single_hose_adapter_no"
@@ -1203,20 +1101,7 @@ const configurator =
             {
                 "id": "acc_gadget_set",
                 "categoryId": "acat_essential",
-                "title": "Liberty Gadget Set",
-                "text": "",
-                "price": {
-                    "eur": 431,
-                    "usd": 405
-                },
-                "mainPicture": {
-                    "url": "",
-                    "alt": ""
-                },
-                "detail": {
-                    "mainText": "",
-                    "secondaryText": ""
-                }
+                "answerId": "a_acc_gadget_set_yes"
             }
         ],
         "rootSelectionId": "s_root"

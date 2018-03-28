@@ -1,8 +1,8 @@
 <template>
   <div>
     <div style="text-align: center; margin-bottom: 40px">
-      <h1 class="card-title">{{data.title}}</h1>
-      <h4 class="card-subtitle">{{data.text}}</h4>
+      <h1 :class="[{ 'card-title': true }, data.classes.title]">{{data.title}}</h1>
+      <h4 :class="[{ 'card-subtitle': true }, data.classes.text]">{{data.text}}</h4>
     </div>
     <div class="row">
       <Answer v-for="answer in answers" :key="answer.answer.id" :data="answer" :sel="false" />

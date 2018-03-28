@@ -1,5 +1,5 @@
-import ConfiguratorData from '~/data/configurator'
-import ConfiguratorDataClasses from '~/data/configurator-classes'
+import configuratorData from '~/data/configurator'
+import { answerClasses, questionClasses, accessoryCategoryClasses } from '~/data/configurator-classes'
 
 function getPrice(environment, price) {
   return ((price || {})[environment] || 0);
@@ -155,7 +155,7 @@ function popAnswerInternal(state) {
   applySelection(c, cd, selEx.selection);
 }
 
-function initializeData(data, { answerClasses }) {
+function initializeData(data, { answerClasses, questionClasses, accessoryCategoryClasses }) {
   initializeStructure(data, "answers", "answerById");
   initializeStructure(data, "selections", "selectionById");
   initializeStructure(data, "questions", "questionById");
@@ -178,11 +178,32 @@ function initializeData(data, { answerClasses }) {
     }
   }
 
+  for (var i = 0; i < data.questions.length; i++) {
+    var q = data.questions[i];
+    var c = questionClasses[q.id];
+
+    q.classes = {
+      title: arrayToHash(c.title || []),
+      text: arrayToHash(c.text || [])
+    }
+  }
+
+  for (var i = 0; i < data.accessoryCategories.length; i++) {
+    var ac = data.accessoryCategories[i];
+    var c = accessoryCategoryClasses[ac.id];
+
+    ac.classes = {
+      title: arrayToHash(c.title || []),
+      shortTitle: arrayToHash(c.shortTitle || []),
+      text: arrayToHash(c.text || [])
+    }
+  }
+
   return data;
 }
 
 export const state = () => ({
-  data: initializeData(ConfiguratorData, ConfiguratorDataClasses),
+  data: initializeData(configuratorData, { answerClasses, questionClasses, accessoryCategoryClasses }),
   state: {
     completed: false,
     curSelection: null,
