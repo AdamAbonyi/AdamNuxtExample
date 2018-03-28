@@ -1,6 +1,6 @@
 <template>
   <div class="row imageGalllery">
-    <div class="col-sm-6 col-md-4 fotogalerie" v-for="img in images" :key="img.src">
+    <div class="col-sm-6 col-md-4 fotogalerie" v-for="(img, index) in images" :key="index">
       <a :href="img.src"
          :alt="img.title"
          :title="img.title"
