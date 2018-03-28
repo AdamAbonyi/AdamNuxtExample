@@ -164,6 +164,10 @@ function initializeData(data, { answerClasses, questionClasses, accessoryCategor
     initializeStructure(data, "accessoryCategories", "accessoryCategoryById");
     initializeStructure(data, "accessoryLists", "accessoryListById");
 
+    answerClasses = answerClasses || {};
+    questionClasses = questionClasses || {};
+    accessoryCategoryClasses = accessoryCategoryClasses || {};
+
     var supportedEnvs = {};
     for (var i = 0; i < data.answers.length; i++) {
         var a = data.answers[i];
