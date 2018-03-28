@@ -1061,7 +1061,7 @@ const configurator =
                 "id": "acat_essential",
                 "title": "Essential Accessories",
                 "shortTitle": "Essential",
-                "text": ""
+                "text": "Choose from variety of Liberty accessories which can personalize, protect or enhance your rebreather."
             },
             {
                 "id": "acat_head",

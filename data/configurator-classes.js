@@ -419,7 +419,7 @@ export const accessoryCategoryClasses =
         "acat_essential": {
             "title": ["text-author-honza"],
             "shortTitle": ["text-author-honza"],
-            "text": []
+            "text": ["text-author-jakub"]
         },
         "acat_head": {
             "title": ["text-author-honza"],
