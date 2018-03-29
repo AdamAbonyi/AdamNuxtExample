@@ -102,7 +102,7 @@ export default {
         },
         {
             "id": "a_bov_mav_var_1",
-            "title": "MAV-1",
+            "title": "MAV-Diameter-1",
             "subTitle": "",
             "text": "",
             "detail": {
@@ -112,7 +112,7 @@ export default {
         },
         {
             "id": "a_bov_mav_var_2",
-            "title": "MAV-2",
+            "title": "MAV-Diameter-2",
             "subTitle": "",
             "text": "",
             "detail": {
@@ -122,7 +122,7 @@ export default {
         },
         {
             "id": "a_bov_mav_var_3",
-            "title": "MAV-3",
+            "title": "MAV-Diameter-3",
             "subTitle": "",
             "text": "",
             "detail": {
@@ -152,7 +152,7 @@ export default {
         },
         {
             "id": "a_bov_hoses_var_1",
-            "title": "Hoses-1",
+            "title": "Hoses-Diameter-1",
             "subTitle": "",
             "text": "",
             "detail": {
@@ -162,7 +162,7 @@ export default {
         },
         {
             "id": "a_bov_hoses_var_2",
-            "title": "Hoses-2",
+            "title": "Hoses-Diameter-2",
             "subTitle": "",
             "text": "",
             "detail": {
@@ -317,7 +317,7 @@ export default {
         },
         {
             "id": "a_dsv_mav_var_1",
-            "title": "MAV-1",
+            "title": "MAV-Diameter-1",
             "subTitle": "",
             "text": "",
             "detail": {
@@ -327,7 +327,7 @@ export default {
         },
         {
             "id": "a_dsv_mav_var_2",
-            "title": "MAV-2",
+            "title": "MAV-Diameter-2",
             "subTitle": "",
             "text": "",
             "detail": {
@@ -337,7 +337,7 @@ export default {
         },
         {
             "id": "a_dsv_mav_var_3",
-            "title": "MAV-3",
+            "title": "MAV-Diameter-3",
             "subTitle": "",
             "text": "",
             "detail": {
@@ -347,7 +347,7 @@ export default {
         },
         {
             "id": "a_dsv_hoses_var_1",
-            "title": "Hoses-1",
+            "title": "Hoses-Diameter-1",
             "subTitle": "",
             "text": "",
             "detail": {
@@ -357,7 +357,7 @@ export default {
         },
         {
             "id": "a_dsv_hoses_var_2",
-            "title": "Hoses-2",
+            "title": "Hoses-Diameter-2",
             "subTitle": "",
             "text": "",
             "detail": {
@@ -480,7 +480,7 @@ export default {
     "questions": [
         {
             "id": "q_bov_hoses_1_none",
-            "title": "BOV Hose 1",
+            "title": "BOV-DIL (1)",
             "text": "",
             "answerIds": [
                 "a_bov_hose_black",
@@ -490,7 +490,7 @@ export default {
         },
         {
             "id": "q_bov_hoses_1_black",
-            "title": "BOV Hose 1",
+            "title": "BOV-DIL (1)",
             "text": "",
             "answerIds": [
                 "a_bov_hose_black_default",
@@ -500,7 +500,7 @@ export default {
         },
         {
             "id": "q_bov_hoses_2_black",
-            "title": "BOV Hose 2",
+            "title": "BOV-DIL (2)",
             "text": "",
             "answerIds": [
                 "a_bov_hose_black_default",
@@ -510,7 +510,7 @@ export default {
         },
         {
             "id": "q_bov_hoses_2_green",
-            "title": "BOV Hose 2",
+            "title": "BOV-OXY (2)",
             "text": "",
             "answerIds": [
                 "a_bov_hose_black",
@@ -520,7 +520,7 @@ export default {
         },
         {
             "id": "q_bov_hoses_3_green",
-            "title": "BOV Hose 3",
+            "title": "BOV-OXY (3)",
             "text": "",
             "answerIds": [
                 "a_bov_hose_black",
@@ -529,7 +529,7 @@ export default {
             ]
         }, {
             "id": "q_dsv_hoses_1_none",
-            "title": "DSV Hose 1",
+            "title": "DSV-DIL (1)",
             "text": "",
             "answerIds": [
                 "a_dsv_hose_black",
@@ -539,7 +539,7 @@ export default {
         },
         {
             "id": "q_dsv_hoses_1_black",
-            "title": "DSV Hose 1",
+            "title": "DSV-DIL (1)",
             "text": "",
             "answerIds": [
                 "a_dsv_hose_black_default",
@@ -549,7 +549,7 @@ export default {
         },
         {
             "id": "q_dsv_hoses_2_green",
-            "title": "DSV Hose 2",
+            "title": "DSV-OXY (2)",
             "text": "",
             "answerIds": [
                 "a_dsv_hose_black",
