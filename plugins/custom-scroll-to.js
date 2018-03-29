@@ -12,12 +12,10 @@ if (!!process.browser && !!window) {
         var start = (el) => {
           window.scrollState.inProgress = true;
           window.scrollState.lastHash = hash;
-          console.log(window.scrollY);
         }
         var done = (el) => { window.scrollState.inProgress = false; }
         var cancel = (el) => { window.scrollState.inProgress = false; }
 
-        console.log(window.scrollY);
         VueScrollTo.scrollTo(hash, {
             offset: -100,
             duration: 500,

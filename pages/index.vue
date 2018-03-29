@@ -52,11 +52,53 @@
     <Gallery></Gallery>
   </section>
 
-  <section id="instructors">
-    Instructors
-    <br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br />
+  <section id="instructors" class="instructors">
+    <h2>Instructors and Training</h2>
+    <p class="text-center subText">Liberty CCR is distributed to end customers through an instructor network. Qualified divers and instructors, corporate and government customers can buy Liberty CCR directly. You can contact your chosen instructor or directly contact the Liberty team.</p>
+
+    <div class="text-center">
+      <b-button to="instructors"
+                variant="danger"
+                class="buttonCenter"
+                style="width: 300px">
+        Find your Instructor
+      </b-button>
+    </div>
+    <br />
+
+    <div class="odd"></div>
+
+    <div class="priceInfo">
+        <div class="row">
+            <div class="col-sm-8" style="text-align:left">
+                <h3>Price</h3>
+                <p>
+                    Liberty CCR price is <strong>7,500 EUR</strong> (excl. VAT).<br>
+                    Recommended US retail price is <strong>8,999 USD</strong>.
+                </p>
+                <p>The price includes the complete unit packed in two cardboard boxes. Just fill tanks and scrubber, charge batteries and it is ready to dive. We supply only complete Liberty units (not stripped). All spare parts or accessories must be ordered separately.</p>
+                <p>Additionaly it is possible to pack Liberty to the Peli Storm Case type iM2975  <br>(<a href="//www.pelican.com/us/en/product/watertight-storm-hard-cases/large-case/travel-case/iM2975/" target="_blank" class="red">More info</a>). This option also depends on transport availability. Peli case price is 300 EUR (VAT excluded). If you are interested in having the Liberty sent to you in the Peli case, do not forget to specify it when ordering.
+            </p></div>
+
+            <div class="col-sm-4">
+                <br>
+                <img src="https://ccrliberty.com/pcs/pcs_layout/instructor-image.png" class="imgCenter img-responsive">
+            </div>
+        </div>
+
+        <br />
+        <div class="text-center">
+          <b-button to="conversion-kits"
+                    variant="danger"
+                    class="buttonCenter"
+                    style="width: 300px">
+              Interested in Conversion Kits?
+          </b-button>
+        </div>
+        <br />
+    </div>
+
+
   </section>
 
   <section id="testimonials" class="testimonials">
@@ -68,11 +110,51 @@
     </div>
   </section>
 
-  <section id="contact">
-    Contact
-    <br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br />
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <br />
+
+    <div class="col-sm-2">
+      <img src="https://ccrliberty.com/pcs/pcs_layout/liberty-systems-sro.jpg" class="img-circle imgCenter img-responsive">
+    </div>
+    <div class="col-sm-4">
+      <h3>Liberty Systems, s.r.o.</h3>
+      <p>
+          Hálkova 2495 <br>
+          Roudnice nad Labem, 413 01 <br>
+          Czech Republic
+      </p>
+      <p>
+          phone: <strong>+420 416 857 057</strong> <br>
+          e-mail: <a href="mailto:info@ccrliberty.com">info@ccrliberty.com</a>
+      </p>
+      <p class="smallerText">
+          ID: 24289914 <br>
+          VAT ID: CZ24289914
+      </p>
+      <p class="smallerText">
+          Incorporated in the Commercial Register kept by the
+          Municipal Court in Prague: C 89580
+      </p>
+    </div>
+    <div class="col-sm-2">
+      <br />>
+      <img src="https://ccrliberty.com/pcs/pcs_layout/divesoft-llc.jpg" class="img-circle imgCenter img-responsive">
+    </div>
+    <div class="col-sm-4">
+      <h3>Divesoft, LLC</h3>
+      <p>
+          7850 Ulmerton Rd <br>
+          Royal Square - Suite 3B <br>
+          Largo, Florida, 33771 <br>
+          USA
+      </p>
+      <p>
+          phone: <strong>+1 (813) 389-7911</strong> <br>
+          e-mail: <a href="mailto:info@divesoftus.com">info@divesoftus.com</a>
+      </p>
+      <p class="smallerText">TIN/EIN: 38-3981686</p>
+    </div>
   </section>
 </div>
 
@@ -82,7 +164,7 @@
 import Testimonial from "~/components/Testimonial";
 import TechnicalBox from "~/components/TechnicalBox";
 import Rebreather from "~/components/Rebreather";
-import Gallery from "~/components/Gallery"
+import Gallery from "~/components/Gallery";
 
 import scrollTo from "~/scripts/scroll-to";
 
@@ -125,11 +207,39 @@ section {
   }
 }
 
-.testimonials, .gallery {
+.testimonials,
+.gallery,
+.instructors,
+.contact {
   text-align: center;
 
   // h2 {
   //   color: white;
   // }
+}
+
+.odd {
+  border-bottom: 1px solid #eaeaea;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 1070px) {
+  .odd,
+  .oddInstructor {
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1070px) {
+  .priceInfo,
+  .odd,
+  .oddInstructor {
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 </style>
