@@ -1164,7 +1164,9 @@ const configurator =
                             "q_acc_gadget_set"
                         ]
                     }
-                ],
+                ]
+            },
+            {
                 "id": "al_sidemount",
                 "pageTitle": "",
                 "pageDesc": "",

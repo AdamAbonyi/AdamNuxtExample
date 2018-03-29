@@ -92,7 +92,7 @@ export default {
           ? " (" + (price > 0 ? "+" : "") + formatPrice(ans.price) + ")"
           : "";
 
-        if (!q || !ans || !price) continue;
+        if (!q || !ans || !ans.price) continue;
 
         data.accessoryLevel.push(
           q.title.toUpperCase() + ": " + ans.text.toUpperCase() + priceText
