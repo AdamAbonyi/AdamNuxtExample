@@ -8,13 +8,14 @@
     </b-button>
   </div> -->
 
-  <section id="links">
-    <nuxt-link to="/">Home</nuxt-link>&nbsp;
-    <nuxt-link to="/configurator">Configurator</nuxt-link>
-  </section>
+
 
   <section id="home">
     Home Stuff
+    <section id="links">
+    <nuxt-link to="/">Home</nuxt-link>&nbsp;
+    <nuxt-link to="/configurator">Configurator</nuxt-link>
+  </section>
     <br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br />
     <br /><br /><br /><br /><br /><br />
@@ -114,46 +115,47 @@
     <h2>Contact</h2>
     <br />
 
-    <div class="col-sm-2">
-      <img src="https://ccrliberty.com/pcs/pcs_layout/liberty-systems-sro.jpg" class="img-circle imgCenter img-responsive">
-    </div>
-    <div class="col-sm-4">
-      <h3>Liberty Systems, s.r.o.</h3>
-      <p>
-          Hálkova 2495 <br>
-          Roudnice nad Labem, 413 01 <br>
-          Czech Republic
-      </p>
-      <p>
-          phone: <strong>+420 416 857 057</strong> <br>
-          e-mail: <a href="mailto:info@ccrliberty.com">info@ccrliberty.com</a>
-      </p>
-      <p class="smallerText">
-          ID: 24289914 <br>
-          VAT ID: CZ24289914
-      </p>
-      <p class="smallerText">
-          Incorporated in the Commercial Register kept by the
-          Municipal Court in Prague: C 89580
-      </p>
-    </div>
-    <div class="col-sm-2">
-      <br />>
-      <img src="https://ccrliberty.com/pcs/pcs_layout/divesoft-llc.jpg" class="img-circle imgCenter img-responsive">
-    </div>
-    <div class="col-sm-4">
-      <h3>Divesoft, LLC</h3>
-      <p>
-          7850 Ulmerton Rd <br>
-          Royal Square - Suite 3B <br>
-          Largo, Florida, 33771 <br>
-          USA
-      </p>
-      <p>
-          phone: <strong>+1 (813) 389-7911</strong> <br>
-          e-mail: <a href="mailto:info@divesoftus.com">info@divesoftus.com</a>
-      </p>
-      <p class="smallerText">TIN/EIN: 38-3981686</p>
+    <div class="row" style="text-align:left">
+      <div class="col-sm-2">
+        <img src="https://ccrliberty.com/pcs/pcs_layout/liberty-systems-sro.jpg" class="img-circle imgCenter img-responsive">
+      </div>
+      <div class="col-sm-4">
+        <h3>Liberty Systems, s.r.o.</h3>
+        <p>
+            Hálkova 2495 <br>
+            Roudnice nad Labem, 413 01 <br>
+            Czech Republic
+        </p>
+        <p>
+            phone: <strong>+420 416 857 057</strong> <br>
+            e-mail: <a href="mailto:info@ccrliberty.com">info@ccrliberty.com</a>
+        </p>
+        <p class="smallerText">
+            ID: 24289914 <br>
+            VAT ID: CZ24289914
+        </p>
+        <p class="smallerText">
+            Incorporated in the Commercial Register kept by the
+            Municipal Court in Prague: C 89580
+        </p>
+      </div>
+      <div class="col-sm-2">
+        <img src="https://ccrliberty.com/pcs/pcs_layout/divesoft-llc.jpg" class="img-circle imgCenter img-responsive">
+      </div>
+      <div class="col-sm-4">
+        <h3>Divesoft, LLC</h3>
+        <p>
+            7850 Ulmerton Rd <br>
+            Royal Square - Suite 3B <br>
+            Largo, Florida, 33771 <br>
+            USA
+        </p>
+        <p>
+            phone: <strong>+1 (813) 389-7911</strong> <br>
+            e-mail: <a href="mailto:info@divesoftus.com">info@divesoftus.com</a>
+        </p>
+        <p class="smallerText">TIN/EIN: 38-3981686</p>
+      </div>
     </div>
   </section>
 </div>
@@ -241,5 +243,10 @@ section {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 100%;
 }
 </style>
