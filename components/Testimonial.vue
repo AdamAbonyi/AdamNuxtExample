@@ -8,18 +8,23 @@
     </div>
     <div class="columnText">
       Liberty rebreathers are used for exploration and research of the Hranicka abyss for three years. We use eCCR Liberty for deep, exploration and securing dives. We are happy with the functionality and safety of the machine.
+      {{tsTest}}
     </div>
 
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   props: {
     data: undefined
   },
   components: {},
-  computed: {},
+  computed: {
+    tsTest(): string {
+      return "Adamek je sikovný kluk";
+    }
+  },
   methods: {}
 };
 </script>

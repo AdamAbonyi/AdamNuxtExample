@@ -35,8 +35,18 @@ module.exports = {
         name: "viewport",
         content: "width=device-width, initial-scale=1, shrink-to-fit=no"
       },
-      { hid: "description", name: "description", content: "CCR Liberty - The Best Equipped Rebreather, First CE Certified." },
-      { hid: "keywords", name: "keywords", content: "CCR Liberty - The Best Equipped Rebreather, First CE Certified." }
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "CCR Liberty - The Best Equipped Rebreather, First CE Certified."
+      },
+      {
+        hid: "keywords",
+        name: "keywords",
+        content:
+          "CCR Liberty - The Best Equipped Rebreather, First CE Certified."
+      }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
@@ -50,6 +60,7 @@ module.exports = {
   ** Modules
   */
   modules: [
+    "~/modules/typescript.js",
     "bootstrap-vue/nuxt"
 
     // Or if you have custom bootstrap CSS...
@@ -70,11 +81,11 @@ module.exports = {
     /** Support for postcss */
     postcss: {
       plugins: {
-        "autoprefixer": true,
+        autoprefixer: true,
         "postcss-nested": true,
         "postcss-responsive-type": true,
         "postcss-hexrgba": true,
-        "precss": true
+        precss: true
       }
     },
     /*
