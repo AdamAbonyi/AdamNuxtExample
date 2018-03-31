@@ -83,7 +83,7 @@
 
             <div class="col-sm-4">
                 <br>
-                <img src="https://ccrliberty.com/pcs/pcs_layout/instructor-image.png" class="imgCenter img-responsive">
+                <img src="/pcs/pcs_layout/instructor-image.png" class="imgCenter img-responsive">
             </div>
         </div>
 
@@ -117,7 +117,7 @@
 
     <div class="row" style="text-align:left">
       <div class="col-sm-2">
-        <img src="https://ccrliberty.com/pcs/pcs_layout/liberty-systems-sro.jpg" class="img-circle imgCenter img-responsive">
+        <img src="/pcs/pcs_layout/liberty-systems-sro.jpg" class="img-circle imgCenter img-responsive">
       </div>
       <div class="col-sm-4">
         <h3>Liberty Systems, s.r.o.</h3>
@@ -140,7 +140,7 @@
         </p>
       </div>
       <div class="col-sm-2">
-        <img src="https://ccrliberty.com/pcs/pcs_layout/divesoft-llc.jpg" class="img-circle imgCenter img-responsive">
+        <img src="/pcs/pcs_layout/divesoft-llc.jpg" class="img-circle imgCenter img-responsive">
       </div>
       <div class="col-sm-4">
         <h3>Divesoft, LLC</h3>
@@ -177,7 +177,16 @@ export default {
     TechnicalBox,
     Gallery
   },
-  created() {},
+  created() {
+
+    if (process.isBrowser && "serviceWorker" in navigator) {
+      const updatesChannel = new BroadcastChannel("my-update-channel");
+      updatesChannel.addEventListener("message", async event => {
+        console.log("some change");
+        console.log(event);
+      });
+    }
+  },
   mounted() {
     if (!this.$route.hash) return;
     scrollTo(this.$route.hash, { offset: -100, duration: 0 });
@@ -246,7 +255,7 @@ section {
 }
 
 .img-circle {
-    border-radius: 50%;
-    width: 100%;
+  border-radius: 50%;
+  width: 100%;
 }
 </style>

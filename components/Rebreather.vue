@@ -1,7 +1,7 @@
 <template>
   <div class="col-xs-12 col-xs-6 col-sm-4">
       <nuxt-link :to="link">
-        <img src="https://ccrliberty.com/images/properties/oxygen-sensors.jpg"
+        <img src="/images/properties/oxygen-sensors.jpg"
              class="topIcon img-circle imgCenter img-responsive">
         </nuxt-link>
       <p class="columText">{{title}}</p>

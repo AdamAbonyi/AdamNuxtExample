@@ -1,6 +1,8 @@
 <template>
   <div class="col-sm-6 col-md-4 text-center">
-    <div><img alt="Michal Guba" src="https://ccrliberty.com/images/testimonials/michal-guba-thumb.png" class="imgCenter img-responsive"/></div>
+    <div>
+      <img alt="Michal Guba"
+           src="/images/testimonials/michal-guba-thumb.png" class="imgCenter img-responsive"/></div>
     <div class="columnTitle">
       <strong>Michal Guba</strong>
       <br />

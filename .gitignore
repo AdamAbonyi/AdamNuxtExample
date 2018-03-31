@@ -15,3 +15,6 @@ dist
 
 # Visual Studio
 .vs
+
+# Nuxt PWA
+sw.*

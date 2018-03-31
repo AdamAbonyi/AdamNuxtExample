@@ -61,7 +61,8 @@ module.exports = {
   */
   modules: [
     "~/modules/typescript.js",
-    "bootstrap-vue/nuxt"
+    "bootstrap-vue/nuxt",
+    "@nuxtjs/pwa"
 
     // Or if you have custom bootstrap CSS...
     // ["bootstrap-vue/nuxt", { css: false }]
@@ -101,5 +102,35 @@ module.exports = {
         });
       }
     }
+  },
+
+  /*
+  ** Nuxt PWA Workbos
+  */
+  workbox: {
+    importScripts: ["my-test-pwa-script.js"],
+    // globalDirectory: '.',
+    globPatterns: ["static/**/*.{js,css,png,jpg, jpeg, json}",
+    ".nuxt/dist/**/*.{js,css,png,jpg, jpeg, json}"],
+    globDirectory: '.',
+    modifyUrlPrefix: { 'static/': '/', '.nuxt/dist/':'/_nuxt/' },
+    // modifyUrlPrefix: { '': '/_nuxt/' }
+
+    // runtimeCaching: [
+    //   {
+    //     // Should be a regex string. Compiles into new RegExp('https://my-cdn.com/.*')
+    //     urlPattern: "*",
+    //     // Defaults to `networkFirst` if omitted
+    //     handler: "cacheFirst",
+    //     // Defaults to `GET` if omitted
+    //     method: "GET",
+    //     options: {
+    //       // Configure the broadcast cache update plugin.
+    //       broadcastUpdate: {
+    //         channelName: "my-update-channel"
+    //       }
+    //     }
+    //   }
+    // ]
   }
 };
