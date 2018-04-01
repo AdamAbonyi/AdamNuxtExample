@@ -4,7 +4,6 @@
     <!-- Needs to be set by menu -->
     <nuxt class="animate-content-container"
           :class="contentClass" />
-
   </div>
 </template>
 
@@ -15,6 +14,7 @@ import { mapState, mapMutations } from "vuex";
 export default {
   created() {
     if (process.browser) {
+      // Update on scroll change
       window.addEventListener("scroll", this.handleScroll);
       this.handleScroll();
     }
@@ -59,12 +59,10 @@ export default {
   transition: all $default-transition-duration;
 }
 
-.nav-expanded {
-  margin-top: 72px;
-  // background-color: red;
-}
-.nav-collapsed {
-  margin-top: 40px;
-  // background-color: red;
-}
+// .nav-expanded {
+//   margin-top: 72px;
+// }
+// .nav-collapsed {
+//   margin-top: 40px;
+// }
 </style>

@@ -32,10 +32,6 @@ export default {
 </script>
 
 <style lang="scss">
-.text-center {
-  text-align: center;
-}
-
 .columnTitle {
   margin-top: 20px;
   margin-bottom: 20px;

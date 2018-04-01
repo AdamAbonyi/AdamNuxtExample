@@ -32,7 +32,7 @@ export default {
   computed: {
     ...mapState(["navExpand"]),
     computedType() {
-      return this.navExpand ? "dark" : "light";
+      return !this.navExpand ? "dark" : "light";
     }
   },
   methods: {

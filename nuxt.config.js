@@ -7,7 +7,7 @@ module.exports = {
       if (to.hash) {
         if (to.path !== from.path) return;
         window.customScrollTo(to.hash, {
-          offset: -100,
+          offset: -50,
           duration: 500
         });
         return {

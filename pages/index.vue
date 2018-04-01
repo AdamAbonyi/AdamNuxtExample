@@ -1,29 +1,32 @@
 <template>
-<div class="container">
-  <!-- Home Page
+<div>
+  <Section id="home"
+    type="dark"
+    :full-height="true"
+    :full-width="false"
+    class="text-center"
+    style="padding-top:180px; min-height:730px">
+    <h1>
+      Liberty
+    </h1>
+    <h2>
+      The best equipped rebreather.
+    </h2>
+      CE certified.
+    <h2>
 
-  <div class="row">
-    <b-button variant="primary" size="sm" href="#technicals">
-      Some Btn
-    </b-button>
-  </div> -->
-
-
-
-  <section id="home">
-    Home Stuff
+    </h2>
     <section id="links">
-    <nuxt-link to="/">Home</nuxt-link>&nbsp;
-    <nuxt-link to="/configurator">Configurator</nuxt-link>
-  </section>
-    <br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br />
-  </section>
+      <nuxt-link to="/">Home</nuxt-link>&nbsp;
+      <nuxt-link to="/configurator">Configurator</nuxt-link>
+    </section>
+  </Section>
 
-  <section id="rebreather" class="rebreathers" >
-    <h2>Fault-tolerant Rebreather</h2>
-    <p class="subText">The Liberty rebreather is designed to be fault-tolerant. No single malfunction in the electronic system could cause a breakdown of the whole apparatus. And even multiple malfunctions often do not lead to a complete breakdown.</p>
+  <Section id="rebreather"
+      class="rebreathers"
+      type="dark"
+      title="Fault-tolerant Rebreather"
+      subtitle="The Liberty rebreather is designed to be fault-tolerant. No single malfunction in the electronic system could cause a breakdown of the whole apparatus. And even multiple malfunctions often do not lead to a complete breakdown.">
     <div class="row column">
       <Rebreather title="4 oxygen sensor" link="4-oxygen-sensors"></Rebreather>
       <Rebreather title="2 helium sensors patented technology" link="4-oxygen-sensors"></Rebreather>
@@ -32,31 +35,36 @@
       <Rebreather title="2 solenoid valves" link="4-oxygen-sensors"></Rebreather>
       <Rebreather title="4 displays" link="4-oxygen-sensors"></Rebreather>
     </div>
-  </section>
+  </Section>
 
-  <section id="technicals" class="technicals">
-    <h2>Technicals</h2>
-    <div class="row column">
-      <TechnicalBox number="01" title="Something something" link="/"></TechnicalBox>
-      <TechnicalBox number="02" title="Something something" link="/"></TechnicalBox>
-      <TechnicalBox number="03" title="Something something" link="/"></TechnicalBox>
-      <TechnicalBox number="04" title="Something something" link="/"></TechnicalBox>
-      <TechnicalBox number="05" title="Something something" link="/"></TechnicalBox>
-      <TechnicalBox number="06" title="Something something" link="/"></TechnicalBox>
-      <TechnicalBox number="07" title="Something something" link="/"></TechnicalBox>
-      <TechnicalBox number="08" title="Something something" link="/"></TechnicalBox>
-    </div>
-  </section>
+  <Section id="technicals"
+      type="light"
+      class="technicals"
+      title="Technicals">
+      <div class="row column">
+        <TechnicalBox number="01" title="Something something" link="/"></TechnicalBox>
+        <TechnicalBox number="02" title="Something something" link="/"></TechnicalBox>
+        <TechnicalBox number="03" title="Something something" link="/"></TechnicalBox>
+        <TechnicalBox number="04" title="Something something" link="/"></TechnicalBox>
+        <TechnicalBox number="05" title="Something something" link="/"></TechnicalBox>
+        <TechnicalBox number="06" title="Something something" link="/"></TechnicalBox>
+        <TechnicalBox number="07" title="Something something" link="/"></TechnicalBox>
+        <TechnicalBox number="08" title="Something something" link="/"></TechnicalBox>
+      </div>
+  </Section>
 
-  <section id="gallery" class="gallery">
-    <h2>Gallery</h2>
-    <Gallery></Gallery>
-  </section>
+  <Section id="gallery"
+    class="gallery"
+    title="Gallery"
+    type="dark">
+      <Gallery></Gallery>
+  </Section>
 
-  <section id="instructors" class="instructors">
-    <h2>Instructors and Training</h2>
-    <p class="text-center subText">Liberty CCR is distributed to end customers through an instructor network. Qualified divers and instructors, corporate and government customers can buy Liberty CCR directly. You can contact your chosen instructor or directly contact the Liberty team.</p>
-
+  <Section id="instructors"
+      class="instructors"
+      title="Instructors and Training"
+      subtitle="Liberty CCR is distributed to end customers through an instructor network. Qualified divers and instructors, corporate and government customers can buy Liberty CCR directly. You can contact your chosen instructor or directly contact the Liberty team."
+      type="light">
     <div class="text-center">
       <b-button to="instructors"
                 variant="danger"
@@ -98,23 +106,23 @@
         </div>
         <br />
     </div>
+  </Section>
 
-
-  </section>
-
-  <section id="testimonials" class="testimonials">
-    <h2>Testimonials</h2>
+  <Section id="testimonials"
+    class="testimonials"
+    title="Testimonials"
+    type="dark">
     <div class="row columns">
       <Testimonial></Testimonial>
       <Testimonial></Testimonial>
       <Testimonial></Testimonial>
     </div>
-  </section>
+  </Section>
 
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <br />
-
+  <Section id="contact"
+    class="contact"
+    title="Contact"
+    type="light">
     <div class="row" style="text-align:left">
       <div class="col-sm-2">
         <img src="/pcs/pcs_layout/liberty-systems-sro.jpg" class="img-circle imgCenter img-responsive">
@@ -157,12 +165,13 @@
         <p class="smallerText">TIN/EIN: 38-3981686</p>
       </div>
     </div>
-  </section>
+  </Section>
 </div>
-
 </template>
 
 <script>
+import Section from "~/components/section";
+
 import Testimonial from "~/components/Testimonial";
 import TechnicalBox from "~/components/TechnicalBox";
 import Rebreather from "~/components/Rebreather";
@@ -175,10 +184,10 @@ export default {
     Testimonial,
     Rebreather,
     TechnicalBox,
-    Gallery
+    Gallery,
+    Section
   },
   created() {
-
     if (process.isBrowser && "serviceWorker" in navigator) {
       const updatesChannel = new BroadcastChannel("my-update-channel");
       updatesChannel.addEventListener("message", async event => {
@@ -195,38 +204,14 @@ export default {
 </script>
 
 <style lang="scss">
-section {
-  h2 {
-    line-height: 58px;
-    margin-bottom: 35px;
-  }
-
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
 .technicals > h2:first-child {
   text-align: center;
 }
 
 .rebreathers {
-  text-align: center;
-
-  h2,
   p {
     text-align: center;
   }
-}
-
-.testimonials,
-.gallery,
-.instructors,
-.contact {
-  text-align: center;
-
-  // h2 {
-  //   color: white;
-  // }
 }
 
 .odd {
@@ -252,10 +237,5 @@ section {
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-.img-circle {
-  border-radius: 50%;
-  width: 100%;
 }
 </style>

@@ -17,7 +17,7 @@ if (!!process.browser && !!window) {
         var cancel = (el) => { window.scrollState.inProgress = false; }
 
         VueScrollTo.scrollTo(hash, {
-            offset: -100,
+            offset: -50,
             duration: 500,
             cancelable: true,
             onStart: start,
