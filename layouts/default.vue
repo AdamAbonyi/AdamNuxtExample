@@ -2,7 +2,8 @@
   <div>
     <TopBar/>
     <!-- Needs to be set by menu -->
-    <nuxt class="animate-content-container" :class="contentClass"/>
+    <nuxt class="animate-content-container"
+          :class="contentClass" />
 
   </div>
 </template>
@@ -22,8 +23,7 @@ export default {
     ...mapState(["navExpand"]),
 
     contentClass: function() {
-      if (!this.expand) return "high-margin";
-      return "low-margin";
+      return !this.navExpand ? "nav-expanded" : "nav-collapsed";
     }
   },
   methods: {
@@ -40,7 +40,7 @@ export default {
     }
   },
   destroyed() {
-    if (process.browser) {
+    if (!!window) {
       window.removeEventListener("scroll", this.handleScroll);
     }
   },
@@ -52,15 +52,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "assets/_variables.scss";
+
 .animate-content-container {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all $default-transition-duration;
+  transition: all $default-transition-duration;
 }
 
-.high-margin {
-  margin-top: 78px;
+.nav-expanded {
+  margin-top: 72px;
+  // background-color: red;
 }
-.low-margin {
-  margin-top: 86px;
+.nav-collapsed {
+  margin-top: 40px;
+  // background-color: red;
 }
 </style>

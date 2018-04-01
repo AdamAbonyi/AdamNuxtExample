@@ -50,11 +50,14 @@ module.exports = {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
-  css: ["@/assets/style.scss"],
+  css: ["@/assets/style.scss"], // inlining them
   dev: (process.env.NODE_ENV || "production").toLowerCase() !== "production",
   transition: {
     name: "fade",
-    mode: "out-in"
+    mode: "out-in",
+    beforeEnter: function () {
+      window.scrollState.lastHash = undefined;
+   }
   },
   /*
   ** Modules
@@ -62,7 +65,7 @@ module.exports = {
   modules: [
     "~/modules/typescript.js",
     "bootstrap-vue/nuxt",
-    "@nuxtjs/pwa"
+    // "@nuxtjs/pwa" // Uncomment this line to support ServiceWorker
 
     // Or if you have custom bootstrap CSS...
     // ["bootstrap-vue/nuxt", { css: false }]
