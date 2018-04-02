@@ -1,16 +1,15 @@
 <template>
   <div class="col-sm-6 col-md-4 text-center">
     <div>
-      <img alt="Michal Guba"
-           src="/images/testimonials/michal-guba-thumb.png" class="imgCenter img-responsive"/></div>
+      <img :alt="fullName"
+           :src="data.thumb" class="imgCenter img-responsive"/></div>
     <div class="columnTitle">
-      <strong>Michal Guba</strong>
+      <strong>{{fullName}}</strong>
       <br />
-      Czech Republic
+      {{data.title}}
     </div>
     <div class="columnText">
-      Liberty rebreathers are used for exploration and research of the Hranicka abyss for three years. We use eCCR Liberty for deep, exploration and securing dives. We are happy with the functionality and safety of the machine.
-      {{tsTest}}
+      {{data.desc}}
     </div>
 
   </div>
@@ -23,9 +22,9 @@ export default {
   },
   components: {},
   computed: {
-    tsTest(): string {
-      return "Adamek je sikovný kluk";
-    }
+    fullName(): string {
+      return `${this.data.firstName} ${this.data.lastName}`
+    },
   },
   methods: {}
 };

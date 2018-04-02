@@ -113,11 +113,7 @@
     class="testimonials"
     title="Testimonials"
     type="dark">
-    <div class="row columns">
-      <Testimonial></Testimonial>
-      <Testimonial></Testimonial>
-      <Testimonial></Testimonial>
-    </div>
+    <Testimonials :data="testimonials"></Testimonials>
   </Section>
 
   <Section id="contact"
@@ -171,16 +167,18 @@
 </template>
 
 <script>
-import Testimonial from "~/components/Testimonial";
+import Testimonials from "~/components/Testimonials";
 import TechnicalBox from "~/components/TechnicalBox";
 import Rebreather from "~/components/Rebreather";
 import Gallery from "~/components/Gallery";
 
 import scrollTo from "~/scripts/scroll-to";
 
+import testimonials from "~/data/testimonials";
+
 export default {
   components: {
-    Testimonial,
+    Testimonials,
     Rebreather,
     TechnicalBox,
     Gallery
@@ -193,6 +191,14 @@ export default {
         console.log(event);
       });
     }
+  },
+  data() {
+    return {
+      testimonials: undefined
+    };
+  },
+  asyncData() {
+    return { testimonials };
   },
   mounted() {
     if (!this.$route.hash) return;
