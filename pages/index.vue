@@ -4,7 +4,8 @@
     type="dark"
     :full-height="true"
     :full-width="false"
-    class="text-center"
+    bgImage="/pcs/pcs_layout/top-background.jpg"
+    class="text-center topSection"
     style="padding-top:180px; min-height:730px">
     <h1>
       Liberty
@@ -170,8 +171,6 @@
 </template>
 
 <script>
-import Section from "~/components/Section";
-
 import Testimonial from "~/components/Testimonial";
 import TechnicalBox from "~/components/TechnicalBox";
 import Rebreather from "~/components/Rebreather";
@@ -184,8 +183,7 @@ export default {
     Testimonial,
     Rebreather,
     TechnicalBox,
-    Gallery,
-    Section
+    Gallery
   },
   created() {
     if (process.isBrowser && "serviceWorker" in navigator) {
@@ -204,6 +202,30 @@ export default {
 </script>
 
 <style lang="scss">
+.topSection {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-color: #0c0c0c !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .topSection {
+    min-height: 586px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .topSection {
+    min-height: 686px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .topSection {
+    min-height: 986px !important;
+  }
+}
+
 .technicals > h2:first-child {
   text-align: center;
 }

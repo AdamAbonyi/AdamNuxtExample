@@ -53,8 +53,9 @@ module.exports = {
   css: ["@/assets/style.scss"], // inlining them
   dev: (process.env.NODE_ENV || "production").toLowerCase() !== "production",
   transition: {
-    name: "fade",
-    mode: "out-in",
+    // name: "fade",
+    // mode: "in-out",
+    duration: 0,
     beforeEnter: function () {
       window.scrollState.lastHash = undefined;
    }
@@ -71,11 +72,14 @@ module.exports = {
     // ["bootstrap-vue/nuxt", { css: false }]
     //'@nuxtjs/router'
   ],
-  plugins: ["~/plugins/custom-scroll-to"],
+  plugins: [
+    "~/plugins/custom-scroll-to",
+    "~/plugins/global-components.js"
+  ],
   /*
   ** Customize the progress bar color
   */
-  loading: false, //{ color: "#3B8070" },
+  loading: true, //{ color: "#3B8070" },
 
   /*
   ** Build configuration
