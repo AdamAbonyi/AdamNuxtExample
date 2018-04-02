@@ -170,7 +170,7 @@
 </template>
 
 <script>
-import Section from "~/components/section";
+import Section from "~/components/Section";
 
 import Testimonial from "~/components/Testimonial";
 import TechnicalBox from "~/components/TechnicalBox";

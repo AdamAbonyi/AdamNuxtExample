@@ -26,8 +26,6 @@ export default {
       default: false
     }
   },
-
-  //["title", "subtitle", "bgImage", "bgColor", "fullHeight", "fullWidth"],
   data() {
     return {};
   }
