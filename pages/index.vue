@@ -113,7 +113,7 @@
     class="testimonials"
     title="Testimonials"
     type="dark">
-    <Testimonials :data="testimonials"></Testimonials>
+    <Testimonials :data="testimonialPicks"></Testimonials>
   </Section>
 
   <Section id="contact"
@@ -176,6 +176,8 @@ import scrollTo from "~/scripts/scroll-to";
 
 import testimonials from "~/data/testimonials";
 
+import { mapState } from 'vuex';
+
 export default {
   components: {
     Testimonials,
@@ -192,17 +194,18 @@ export default {
       });
     }
   },
-  data() {
-    return {
-      testimonials: undefined
-    };
+  computed: {
+    ...mapState("testimonials", ["testimonialPicks"])
   },
-  asyncData() {
-    return { testimonials };
+  fetch({ store }) {
+    return store.dispatch("testimonials/initialize", testimonials );
   },
   mounted() {
     if (!this.$route.hash) return;
     scrollTo(this.$route.hash, { offset: -100, duration: 0 });
+  },
+  methods: {
+
   }
 };
 </script>
