@@ -1,7 +1,7 @@
 module.exports = {
   router: {
     linkActiveClass: "link-active",
-    scrollBehavior: function(to, from, savedPosition) {
+    scrollBehavior: function (to, from, savedPosition) {
       if (!process.browser || !window || !window.customScrollTo) return;
 
       if (to.hash) {
@@ -58,7 +58,7 @@ module.exports = {
     duration: 0,
     beforeEnter: function () {
       window.scrollState.lastHash = undefined;
-   }
+    }
   },
   /*
   ** Modules
@@ -111,16 +111,23 @@ module.exports = {
     }
   },
 
+  render: {
+    http2: { push: true },
+    static: {
+      maxAge: 60000
+    }
+  },
+
   /*
   ** Nuxt PWA Workbos
   */
   workbox: {
     importScripts: ["my-test-pwa-script.js"],
     // globalDirectory: '.',
-    globPatterns: ["static/**/*.{js,css,png,jpg, jpeg, json}",
-    ".nuxt/dist/**/*.{js,css,png,jpg, jpeg, json}"],
+    globPatterns: ["static/**/*.{js, css, png, jpg, jpeg, json}",
+      ".nuxt/dist/**/*.{js, css, png, jpg, jpeg, json}"],
     globDirectory: '.',
-    modifyUrlPrefix: { 'static/': '/', '.nuxt/dist/':'/_nuxt/' },
+    modifyUrlPrefix: { 'static/': '/', '.nuxt/dist/': '/_nuxt/' },
     // modifyUrlPrefix: { '': '/_nuxt/' }
 
     // runtimeCaching: [

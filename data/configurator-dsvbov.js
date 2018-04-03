@@ -4,7 +4,7 @@ export default {
             "id": "a_dsv",
             "title": "DSV",
             "subTitle": "",
-            "text": "",
+            "text": "The dive surface valve is the best choice for those who want a simple, light and streamlined mouthpiece tested and loved by many divers.",
             "detail": {
                 "mainText": "",
                 "secondaryText": "",
@@ -14,7 +14,7 @@ export default {
             "id": "a_bov",
             "title": "BOV",
             "subTitle": "",
-            "text": "",
+            "text": "Bailout valve combines the reliability of a DSV with a normal regulator, allowing you to switch between close and open circuit at the turn of a dial. If you consider diving with a full-face mask, the BOV is a necessary addition to your rebreather configuration.",
             "detail": {
                 "mainText": "",
                 "secondaryText": "",
@@ -24,7 +24,7 @@ export default {
             "id": "a_adv_integrated",
             "title": "ADV-Integrated",
             "subTitle": "",
-            "text": "",
+            "text": "The integrated ADV rests inside of the BOV. It makes it much easier to find and manipulate with your ADV.",
             "detail": {
                 "mainText": "",
                 "secondaryText": "",
@@ -84,7 +84,8 @@ export default {
             "id": "a_bov_mav_yes",
             "title": "MAV",
             "subTitle": "",
-            "text": "",
+            // Duplicated at a_dsv_mav_yes
+            "text": "An alternative to the standard manual addition valves, the add valves are placed on the sides of the mouthpiece making them easy to find and easy to use.",
             "detail": {
                 "mainText": "",
                 "secondaryText": "",
@@ -134,7 +135,7 @@ export default {
             "id": "a_single_hose_adapter_yes",
             "title": "Single-Hose-Adapter",
             "subTitle": "",
-            "text": "",
+            "text": "A connector for coupling the bailout intake with the diluent intake to make hose management easier.",
             "detail": {
                 "mainText": "",
                 "secondaryText": "",
@@ -279,17 +280,17 @@ export default {
             "id": "a_dsv_output_format_direct",
             "title": "Direct",
             "subTitle": "",
-            "text": "",
+            "text": "A straight connector for your mouthpiece. For use with standard back mounted rebreathers.",
             "detail": {
                 "mainText": "",
                 "secondaryText": "",
             }
         },
         {
-            "id": "a_dsv_output_format_lbows",
-            "title": "L-Bows",
+            "id": "a_dsv_output_format_elbows",
+            "title": "Elbows",
             "subTitle": "",
-            "text": "",
+            "text": "Bent connectors that allow the connection of the mouthpiece to a side mount rebreather.",
             "detail": {
                 "mainText": "",
                 "secondaryText": "",
@@ -299,7 +300,8 @@ export default {
             "id": "a_dsv_mav_yes",
             "title": "MAV",
             "subTitle": "",
-            "text": "",
+            // Duplicated at a_bov_mav_yes
+            "text": "An alternative to the standard manual addition valves, the add valves are placed on the sides of the mouthpiece making them easy to find and easy to use.",
             "detail": {
                 "mainText": "",
                 "secondaryText": "",
@@ -317,8 +319,8 @@ export default {
         },
         {
             "id": "a_dsv_mav_var_1",
-            "title": "MAV-Diameter-1",
-            "subTitle": "",
+            "title": "MAV-r-EVO",
+            "subTitle": "Connector ø 44.6 mm, 1 3/4\" hose",
             "text": "",
             "detail": {
                 "mainText": "",
@@ -327,8 +329,8 @@ export default {
         },
         {
             "id": "a_dsv_mav_var_2",
-            "title": "MAV-Diameter-2",
-            "subTitle": "",
+            "title": "MAV-JJ",
+            "subTitle": "Connector ø 34.4 mm, 1 3/8\" hose",
             "text": "",
             "detail": {
                 "mainText": "",
@@ -337,8 +339,28 @@ export default {
         },
         {
             "id": "a_dsv_mav_var_3",
-            "title": "MAV-Diameter-3",
-            "subTitle": "",
+            "title": "MAV-Hollis",
+            "subTitle": "Connector ø 39.6 mm, 1 1/2\" hose",
+            "text": "",
+            "detail": {
+                "mainText": "",
+                "secondaryText": "",
+            }
+        },
+        {
+            "id": "a_dsv_mav_var_4",
+            "title": "MAV-Inspiration",
+            "subTitle": "Connector ø 30.5 mm, 1 1/4\" hose",
+            "text": "",
+            "detail": {
+                "mainText": "",
+                "secondaryText": "",
+            }
+        },
+        {
+            "id": "a_dsv_mav_var_5",
+            "title": "MAV-Liberty",
+            "subTitle": "Connector ø 38.1 mm, 1 3/2\" hose",
             "text": "",
             "detail": {
                 "mainText": "",
@@ -478,10 +500,11 @@ export default {
         }
     ],
     "questions": [
+        // !!! A lot of duplicate texts, modify carefully !!!
         {
             "id": "q_bov_hoses_1_none",
-            "title": "BOV-DIL (1)",
-            "text": "",
+            "title": "BOV DIL HOSE",
+            "text": "A diluent hose with UNF 7/16-18 threading [[XXXXX]] long.",
             "answerIds": [
                 "a_bov_hose_black",
                 "a_bov_hose_green",
@@ -490,8 +513,8 @@ export default {
         },
         {
             "id": "q_bov_hoses_1_black",
-            "title": "BOV-DIL (1)",
-            "text": "",
+            "title": "BOV DIL HOSE",
+            "text": "A diluent hose with UNF 7/16-18 threading [[XXXXX]] long.",
             "answerIds": [
                 "a_bov_hose_black_default",
                 "a_bov_hose_green",
@@ -500,8 +523,8 @@ export default {
         },
         {
             "id": "q_bov_hoses_2_black",
-            "title": "BOV-DIL (2)",
-            "text": "",
+            "title": "BOV DIL HOSE 2",
+            "text": "Another diluent hose with UNF 7/16-18 threading [[XXXXX]] long.",
             "answerIds": [
                 "a_bov_hose_black_default",
                 "a_bov_hose_green",
@@ -510,8 +533,8 @@ export default {
         },
         {
             "id": "q_bov_hoses_2_green",
-            "title": "BOV-OXY (2)",
-            "text": "",
+            "title": "BOV OXY HOSE",
+            "text": "An oxygen compatible hose with UNF 7/16 -18 threading [[XXXXX]] long.",
             "answerIds": [
                 "a_bov_hose_black",
                 "a_bov_hose_green_default",
@@ -520,8 +543,8 @@ export default {
         },
         {
             "id": "q_bov_hoses_3_green",
-            "title": "BOV-OXY (3)",
-            "text": "",
+            "title": "BOV OXY HOSE",
+            "text": "An oxygen compatible hose with UNF 7/16 -18 threading [[XXXXX]] long.",
             "answerIds": [
                 "a_bov_hose_black",
                 "a_bov_hose_green_default",
@@ -529,8 +552,8 @@ export default {
             ]
         }, {
             "id": "q_dsv_hoses_1_none",
-            "title": "DSV-DIL (1)",
-            "text": "",
+            "title": "DSV DIL HOSE",
+            "text": "A diluent hose with UNF 7/16-18 threading [[XXXXX]] long.",
             "answerIds": [
                 "a_dsv_hose_black",
                 "a_dsv_hose_green",
@@ -539,8 +562,8 @@ export default {
         },
         {
             "id": "q_dsv_hoses_1_black",
-            "title": "DSV-DIL (1)",
-            "text": "",
+            "title": "DSV DIL HOSE",
+            "text": "A diluent hose with UNF 7/16-18 threading [[XXXXX]] long.",
             "answerIds": [
                 "a_dsv_hose_black_default",
                 "a_dsv_hose_green",
@@ -549,8 +572,8 @@ export default {
         },
         {
             "id": "q_dsv_hoses_2_green",
-            "title": "DSV-OXY (2)",
-            "text": "",
+            "title": "DSV OXY HOSE",
+            "text": "An oxygen compatible hose with UNF 7/16 -18 threading [[XXXXX]] long.",
             "answerIds": [
                 "a_dsv_hose_black",
                 "a_dsv_hose_green_default",
@@ -828,7 +851,7 @@ export default {
                     "targetId": "s_dsv_mav"
                 },
                 {
-                    "id": "a_dsv_output_format_lbows",
+                    "id": "a_dsv_output_format_elbows",
                     "targetId": "s_dsv_mav"
                 }
             ]
@@ -863,6 +886,14 @@ export default {
                 },
                 {
                     "id": "a_dsv_mav_var_3",
+                    "targetId": "s_dsv_mav_circuit_dir"
+                },
+                {
+                    "id": "a_dsv_mav_var_4",
+                    "targetId": "s_dsv_mav_circuit_dir"
+                },
+                {
+                    "id": "a_dsv_mav_var_5",
                     "targetId": "s_dsv_mav_circuit_dir"
                 }
             ]
@@ -1011,7 +1042,7 @@ export default {
             "id": "acat_spare_parts",
             "title": "Spare Parts",
             "shortTitle": "Spare Parts",
-            "text": ""
+            "text": "The spare parts kit contains everything you will need to service your BOV."
         }
     ],
     "accessoryLists": [
