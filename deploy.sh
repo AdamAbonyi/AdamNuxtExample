@@ -19,6 +19,7 @@ mkdir .temp/.nuxt
 
 cp -R "$CUR_DIR/.nuxt/dist" "./.temp/.nuxt/dist/"
 cp -R "$CUR_DIR/static" "./.temp/static/"
+cp -R "$CUR_DIR/modules" "./.temp/modules/"
 cp "$CUR_DIR/deploy.package.json" "./.temp/package.json"
 cp "$CUR_DIR/nuxt.config.js" "./.temp/"
 cp "$CUR_DIR/web.config" "./.temp/"
